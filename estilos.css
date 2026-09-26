@@ -31,7 +31,7 @@ header h1 {
 }
 
 /* MENÚ */
-nav {
+nav .nav-link {
     background-color: #111111;
     display: flex;
     justify-content: center;
@@ -39,14 +39,14 @@ nav {
     padding: 15px;
 }
 
-nav a {
+nav .nav-link {
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-nav a:hover {
+nav .nav-link:hover {
     color: #9b6dcc;
 }
 
@@ -68,4 +68,16 @@ nav a:hover {
     text-shadow:
         1px 1px 4px black,
         0 0 2px black;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
 }
