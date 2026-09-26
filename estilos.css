@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: "Roboto", sans-serif;
+}
+
+/* CABECERA */
+header {
+    background-color: #24113f;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Roboto', serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+/* MENÚ */
+nav {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9b6dcc;
+}
+
+/* CARRUSEL */
+.carrusel-punto {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* TEXTO DEL CARRUSEL */
+
+.carrusel-punto .carousel-caption h5 {
+    text-shadow:
+        1px 1px 5px black,
+        0 0 3px black;
+}
+
+.carrusel-punto .carousel-caption p {
+    text-shadow:
+        1px 1px 4px black,
+        0 0 2px black;
+}
