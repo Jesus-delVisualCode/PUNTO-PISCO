@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Punto Pisco</title>
+
+     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+        <!-- tipos de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+
+     <!-- estilos de punto pisco -->    
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="logo de punto pisco">
+        <h1>PUNTO PISCO</h1>
+    </header>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #111111;">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menuPuntoPisco" aria-controls="menuPuntoPisco"
+            aria-expanded="false" aria-label="Abrir menú">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPuntoPisco">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PISCO</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ICA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PERÚ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DEPORTES</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TECNOLOGÍA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CULTURA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+    <!-- MENU -->
+
+
+<!-- CONTENIDO PRINCIPAL: CONTACTO -->
+<main class="contacto-pagina">
+
+    <section class="contacto-portada">
+        <span class="contacto-etiqueta">PUNTO PISCO · CONTACTO</span>
+
+        <h1>Estamos aquí para escucharte.</h1>
+
+        <p>
+            ¿Tienes una consulta, una sugerencia o información
+            que podría convertirse en una noticia?
+            Escríbenos. Queremos escucharte.
+        </p>
+    </section>
+
+    <section class="contacto-contenido container">
+        <div class="row g-4 align-items-start">
+
+            <!-- INFORMACIÓN -->
+            <div class="col-12 col-lg-5 contacto-informacion">
+                <h2>Hablemos.</h2>
+
+                <p>
+                    Punto Pisco es un proyecto informativo
+                    comprometido con nuestra comunidad.
+                    Tus ideas y aportes nos ayudan a mejorar.
+                </p>
+
+                <div class="contacto-nota">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                        <h3>Comunícate con nosotros</h3>
+                        <p>
+                            Completa el formulario y envíanos
+                            tu mensaje.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contacto-nota">
+                    <i class="bi bi-newspaper"></i>
+                    <div>
+                        <h3>¿Tienes información?</h3>
+                        <p>
+                            Puedes compartir datos o sugerencias
+                            sobre acontecimientos de Pisco, Ica
+                            y el Perú.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="col-12 col-lg-7">
+                <div class="contacto-formulario">
+
+                    <h2>Envíanos un mensaje</h2>
+
+                    <p class="contacto-subtitulo">
+                        Completa los campos y nos pondremos
+                        en contacto contigo.
+                    </p>
+
+                    <form
+                        action="https://formspree.io/f/xdeeakdw"
+                        method="POST">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">
+                                Nombre
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Escribe tu nombre"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">
+                                Correo electrónico
+                            </label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="correo"
+                                name="email"
+                                placeholder="tucorreo@ejemplo.com"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">
+                                Asunto
+                            </label>
+                            <select
+                                class="form-select"
+                                id="asunto"
+                                name="asunto"
+                                required>
+                                <option value="" selected disabled>
+                                    Selecciona un asunto
+                                </option>
+                                <option value="Consulta">
+                                    Consulta
+                                </option>
+                                <option value="Sugerencia">
+                                    Sugerencia
+                                </option>
+                                <option value="Informacion de noticia">
+                                    Información sobre una noticia
+                                </option>
+                                <option value="Otro">
+                                    Otro
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label">
+                                Mensaje
+                            </label>
+                            <textarea
+                                class="form-control"
+                                id="mensaje"
+                                name="message"
+                                rows="5"
+                                placeholder="Escribe tu mensaje aquí..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="contacto-boton">
+                            <i class="bi bi-send"></i>
+                            Enviar mensaje
+                        </button>
+
+                        <p class="contacto-privacidad">
+                            Utilizaremos los datos que compartas
+                            para atender tu mensaje.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+<!-- FIN DEL CONTENIDO PRINCIPAL -->
+
+
+
+    <!-- PIE DE PAGINA -->
+    <footer class="pie-pagina">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Identidad del periódico -->
+            <div class="col-12 col-md-5">
+                <h2 class="footer-logo">PUNTO PISCO</h2>
+
+                <p class="footer-descripcion">
+                    La información de nuestra tierra,
+                    en un solo lugar.
+                </p>
+
+                <!-- Redes sociales -->
+                <div class="footer-redes">
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="TikTok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Secciones -->
+            <div class="col-6 col-md-3">
+                <h3 class="footer-titulo">SECCIONES</h3>
+
+                <ul class="footer-enlaces">
+                    <li><a href="pisco.html">Pisco</a></li>
+                    <li><a href="ica.html">Ica</a></li>
+                    <li><a href="peru.html">Perú</a></li>
+                    <li><a href="deportes.html">Deportes</a></li>
+                    <li><a href="tecnologia.html">Tecnología</a></li>
+                    <li><a href="cultura.html">Cultura</a></li>
+                </ul>
+            </div>
+
+            <!-- Información -->
+            <div class="col-6 col-md-4">
+                <h3 class="footer-titulo">PUNTO PISCO</h3>
+
+                <ul class="footer-enlaces">
+                    <li>
+                        <a href="quienes-somos.html">
+                            Quiénes somos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacidad.html">
+                            Política de privacidad
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="footer-inferior">
+            <p>
+                © 2026 Punto Pisco.
+                Todos los derechos reservados.
+            </p>
+        </div>
+
+    </div>
+
+    </footer>
+    <!-- FIN DEL PIE DE PAGINA -->
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>   
