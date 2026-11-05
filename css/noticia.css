@@ -1,0 +1,518 @@
+/* =========================================
+   1. CONTENIDO GENERAL
+========================================= */
+
+.contenido-noticia {
+    background-color: #f4f4f6;
+    padding: 35px 0 70px;
+    min-height: 100vh;
+}
+
+.contenido-noticia > .container {
+    max-width: 1100px;
+}
+
+
+/* =========================================
+   2. RUTA DE NAVEGACIÓN
+========================================= */
+
+.ruta-noticia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777;
+}
+
+.ruta-noticia a {
+    color: #4b286f;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ruta-noticia a:hover {
+    color: #24113f;
+    text-decoration: underline;
+}
+
+.ruta-noticia span[aria-current="page"] {
+    color: #555;
+}
+
+
+/* =========================================
+   3. CONTENEDOR DEL ARTÍCULO
+========================================= */
+
+.articulo-noticia {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 45px 55px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.055);
+}
+
+
+/* =========================================
+   4. ENCABEZADO DE LA NOTICIA
+========================================= */
+
+.encabezado-noticia {
+    margin-bottom: 30px;
+}
+
+.noticia-categoria {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 7px 13px;
+    background-color: #24113f;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.encabezado-noticia h1 {
+    margin: 0 0 18px;
+    color: #211b29;
+    font-family: 'Roboto Slab', serif;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -0.6px;
+}
+
+.bajada-noticia {
+    margin: 0 0 23px;
+    color: #55515b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   5. DATOS DE PUBLICACIÓN
+========================================= */
+
+.datos-noticia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 25px;
+    padding: 17px 0;
+    border-top: 1px solid #e9e6ed;
+    border-bottom: 1px solid #e9e6ed;
+}
+
+.datos-noticia span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #696570;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.datos-noticia i {
+    color: #542d7d;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   6. FECHA DEL ACONTECIMIENTO
+========================================= */
+
+.fecha-acontecimiento {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: #77717e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.fecha-acontecimiento i {
+    color: #542d7d;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   7. VIDEO PRINCIPAL
+========================================= */
+
+.video-noticia {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 30px 0;
+    overflow: hidden;
+    background-color: #17121e;
+    border-radius: 7px;
+}
+
+.video-noticia iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* =========================================
+   8. IMAGEN PRINCIPAL
+========================================= */
+
+.imagen-principal-noticia {
+    width: 100%;
+    margin: 25px 0 40px;
+}
+
+.imagen-principal-noticia img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+.imagen-principal-noticia figcaption {
+    margin-top: 10px;
+    color: #77727e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* =========================================
+   9. CUERPO DE LA NOTICIA
+========================================= */
+
+.cuerpo-noticia {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #343039;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.cuerpo-noticia p {
+    margin-bottom: 22px;
+}
+
+.cuerpo-noticia h2 {
+    margin: 38px 0 18px;
+    padding-left: 14px;
+    border-left: 4px solid #542d7d;
+    color: #24113f;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   10. IMÁGENES ADICIONALES
+========================================= */
+
+.imagen-adicional-noticia {
+    width: 90%;
+    max-width: 720px;
+    margin: 32px auto;
+}
+
+.imagen-adicional-noticia img {
+    display: block;
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+.imagen-adicional-noticia figcaption {
+    margin-top: 9px;
+    color: #77727e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* =========================================
+   11. FUENTES DE INFORMACIÓN
+========================================= */
+
+.fuentes-noticia {
+    max-width: 780px;
+    margin: 45px auto 0;
+    padding: 25px 0;
+    border-top: 1px solid #e9e6ed;
+    border-bottom: 1px solid #e9e6ed;
+}
+
+.fuentes-noticia h3 {
+    margin-bottom: 17px;
+    color: #24113f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.fuentes-noticia ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.fuentes-noticia li {
+    margin-bottom: 10px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.fuentes-noticia li:last-child {
+    margin-bottom: 0;
+}
+
+.fuentes-noticia a {
+    color: #542d7d;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.fuentes-noticia a:hover {
+    color: #24113f;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   12. COMPARTIR NOTICIA
+========================================= */
+
+.compartir-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 13px;
+    max-width: 780px;
+    margin: 25px auto 0;
+}
+
+.compartir-noticia span {
+    color: #625d68;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.compartir-noticia a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #f0edf4;
+    color: #41205f;
+    border-radius: 50%;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.compartir-noticia a:hover {
+    background-color: #24113f;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   13. ADAPTACIÓN PARA TABLETS
+========================================= */
+
+@media (max-width: 991px) {
+
+    .contenido-noticia {
+        padding: 25px 0 50px;
+    }
+
+    .articulo-noticia {
+        padding: 35px 35px;
+    }
+
+    .encabezado-noticia h1 {
+        font-size: 34px;
+    }
+
+    .bajada-noticia {
+        font-size: 17px;
+    }
+
+    .cuerpo-noticia {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================
+   14. ADAPTACIÓN PARA CELULARES
+========================================= */
+
+@media (max-width: 576px) {
+
+    .contenido-noticia {
+        padding: 18px 0 35px;
+    }
+
+    .ruta-noticia {
+        gap: 7px;
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+
+    .articulo-noticia {
+        padding: 25px 18px;
+        border-radius: 7px;
+    }
+
+    .encabezado-noticia {
+        margin-bottom: 23px;
+    }
+
+    .noticia-categoria {
+        margin-bottom: 13px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .encabezado-noticia h1 {
+        margin-bottom: 14px;
+        font-size: 29px;
+        line-height: 1.25;
+    }
+
+    .bajada-noticia {
+        margin-bottom: 18px;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .datos-noticia {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 0;
+    }
+
+    .datos-noticia span {
+        font-size: 12px;
+    }
+
+    .fecha-acontecimiento {
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .video-noticia {
+        margin: 22px 0;
+        border-radius: 5px;
+    }
+
+    .imagen-principal-noticia {
+        margin: 22px 0 30px;
+    }
+
+    .imagen-principal-noticia img {
+        max-height: 300px;
+        border-radius: 5px;
+    }
+
+    .imagen-principal-noticia figcaption {
+        font-size: 11px;
+    }
+
+    .cuerpo-noticia {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .cuerpo-noticia p {
+        margin-bottom: 18px;
+    }
+
+    .cuerpo-noticia h2 {
+        margin: 30px 0 15px;
+        padding-left: 11px;
+        font-size: 21px;
+    }
+
+    .imagen-adicional-noticia {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    .imagen-adicional-noticia img {
+        max-height: 280px;
+        border-radius: 5px;
+    }
+
+    .imagen-adicional-noticia figcaption {
+        font-size: 11px;
+    }
+
+    .fuentes-noticia {
+        margin-top: 32px;
+        padding: 20px 0;
+    }
+
+    .fuentes-noticia h3 {
+        font-size: 15px;
+    }
+
+    .fuentes-noticia li {
+        font-size: 13px;
+    }
+
+    .compartir-noticia {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .compartir-noticia span {
+        font-size: 13px;
+    }
+
+    .compartir-noticia a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+}

@@ -19,27 +19,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 
      <!-- estilos de punto pisco -->    
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/esencial.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    
 
 </head>
 
 <body>
 
-    <header>
-        <img src="img/logo.png" alt="logo de punto pisco">
-        <h1>PUNTO PISCO</h1>
-    </header>
+    
+<!-- CABECERA -->
+<header class="cabecera-punto">
+    <a href="index.html" class="logo-enlace" aria-label="Ir al inicio">
+        <img src="img/logo.png" alt="Logo de Punto Pisco">
+    </a>
 
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #111111;">
+    <h1>PUNTO PISCO</h1>
+
+    <!-- Redes sociales -->
+    <div class="cabecera-redes">
+        <a href="https://www.facebook.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+        </a>
+    </div>
+</header>
+
+<!-- MENÚ PRINCIPAL -->
+<nav class="navbar navbar-expand-lg navbar-dark menu-punto">
     <div class="container">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#menuPuntoPisco" aria-controls="menuPuntoPisco"
-            aria-expanded="false" aria-label="Abrir menú">
-
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPuntoPisco"
+            aria-controls="menuPuntoPisco"
+            aria-expanded="false"
+            aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
         <div class="collapse navbar-collapse" id="menuPuntoPisco">
@@ -51,39 +81,73 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PISCO</a>
+                    <a class="nav-link" href="pisco.html">PISCO</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ICA</a>
+                    <a class="nav-link" href="ica.html">ICA</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PERÚ</a>
+                    <a class="nav-link" href="peru.html">PERÚ</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">DEPORTES</a>
+                    <a class="nav-link" href="deportes.html">DEPORTES</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TECNOLOGÍA</a>
+                    <a class="nav-link" href="tecnologia.html">TECNOLOGÍA</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CULTURA</a>
+                    <a class="nav-link" href="cultura.html">CULTURA</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
+                <!-- Información institucional -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="menuInformacion"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        INFORMACIÓN
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        aria-labelledby="menuInformacion">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="quienes-somos.html">
+                                Quiénes somos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="privacidad.html">
+                                Política de privacidad
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
             </ul>
-
         </div>
     </div>
 </nav>
-    <!-- MENU -->
+<!-- FIN DEL MENÚ -->
+
 
     <!-- CARRUSEL -->
     <div id="carouselExampleCaptions" class="carousel slide carrusel-punto">
@@ -94,21 +158,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/carrusel1.jpg" class="d-block w-100" alt="imagen 1 del carrusel">
+      <img src="img/inicio/carrusel1.jpg" class="d-block w-100" alt="imagen 1 del carrusel">
       <div class="carousel-caption d-none d-md-block">
         <h5>Pisco, historia que permanece</h5>
         <p>La Plaza de Armas, uno de los espacios que forma parte de la historia e identidad de nuestra ciudad.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/carrusel2.jpg" class="d-block w-100" alt="imagen 2 del carrusel">
+      <img src="img/inicio/carrusel2.jpg" class="d-block w-100" alt="imagen 2 del carrusel">
       <div class="carousel-caption d-none d-md-block">
         <h5>El malecón, frente al Pacífico</h5>
         <p>Un espacio para disfrutar del paisaje, la brisa marina y la vida cotidiana de Pisco.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/carrusel3.jpg" class="d-block w-100" alt="imagen 3 del carrusel">
+      <img src="img/inicio/carrusel3.jpg" class="d-block w-100" alt="imagen 3 del carrusel">
       <div class="carousel-caption d-none d-md-block">
         <h5>Pisco, entre el mar y su gente</h5>
         <p>Playas, paisajes y personas que forman parte de la identidad de nuestra provincia.</p>
@@ -225,16 +289,16 @@
         <div class="col-12 col-sm-6 col-lg-4">
             <article class="tarjeta-noticia">
                 <img
-                    src="img/pisco2.jpg"
+                    src="img/pisco/noticia-pisco-1.jpg"
                     alt="Malecón de Pisco"
                     class="imagen-tarjeta"
                 >
 
                 <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">TURISMO</span>
+                    <span class="categoria-tarjeta">SEGURIDAD CIUDADANA</span>
 
                     <h3>
-                        El malecón de Pisco y sus atractivos turísticos
+                        Enfrentamiento policial en Pisco deja cuatro detenidos durante operativo por presunto secuestro
                     </h3>
                 </div>
             </article>
@@ -738,13 +802,19 @@
 
         </div>
 
+        
         <!-- Derechos de autor -->
         <div class="footer-inferior">
             <p>
                 © 2026 Punto Pisco.
                 Todos los derechos reservados.
             </p>
+
+            <p class="footer-creador">
+                Un proyecto creado por Jesús Mejía.
+            </p>
         </div>
+
 
     </div>
 

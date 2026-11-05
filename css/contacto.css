@@ -1,0 +1,208 @@
+/* =========================================================
+    PÁGINA CONTACTO
+========================================================= */
+
+.contacto-pagina {
+    padding-bottom: 70px;
+    background-color: var(--color-fondo);
+    color: #242424;
+}
+
+/* Portada */
+
+.contacto-portada {
+    padding: 75px 20px 80px;
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.contacto-etiqueta {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #d0b5ff;
+    font-family: var(--fuente-interfaz);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.contacto-portada h1 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-family: var(--fuente-principal);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contacto-portada > p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e5dfee;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Contenido e información */
+
+.contacto-contenido {
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+.contacto-informacion {
+    padding-top: 15px;
+}
+
+.contacto-informacion > h2,
+.contacto-formulario > h2 {
+    margin-bottom: 18px;
+    font-family: var(--fuente-titulos);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contacto-informacion > p {
+    margin-bottom: 30px;
+    color: #626262;
+    line-height: 1.9;
+}
+
+.contacto-nota {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.contacto-nota > i {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #e9e0f5;
+    color: var(--color-morado);
+    border-radius: 12px;
+    font-size: 23px;
+}
+
+.contacto-nota h3 {
+    margin: 3px 0 8px;
+    font-family: var(--fuente-interfaz);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contacto-nota p {
+    margin-bottom: 0;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Formulario */
+
+.contacto-formulario {
+    padding: 35px;
+    background-color: var(--color-blanco);
+    border: 1px solid #e7e1ed;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(36, 17, 63, 0.07);
+}
+
+.contacto-subtitulo {
+    margin-bottom: 28px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contacto-formulario .form-label {
+    margin-bottom: 8px;
+    font-family: var(--fuente-interfaz);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contacto-formulario .form-control,
+.contacto-formulario .form-select {
+    padding: 12px 14px;
+    border: 1px solid #d9d3e0;
+    border-radius: 8px;
+    font-family: var(--fuente-principal);
+    font-size: 15px;
+}
+
+.contacto-formulario .form-control:focus,
+.contacto-formulario .form-select:focus {
+    border-color: #68419a;
+    box-shadow: 0 0 0 0.2rem rgba(104, 65, 154, 0.15);
+}
+
+.contacto-formulario textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Botón y privacidad del formulario */
+
+.contacto-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 8px;
+    font-family: var(--fuente-interfaz);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contacto-boton:hover {
+    background-color: #42216b;
+    transform: translateY(-2px);
+}
+
+.contacto-privacidad {
+    margin: 18px 0 0;
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+
+/* ADAPTACIONES RESPONSIVE */
+
+@media (max-width: 576px) {
+    .contacto-portada {
+        padding: 55px 20px 60px;
+    }
+    .contacto-portada > p {
+        font-size: 15px;
+    }
+    .contacto-contenido {
+        padding-top: 35px;
+    }
+    .contacto-informacion > h2,
+    .contacto-formulario > h2 {
+        font-size: 25px;
+    }
+    .contacto-formulario {
+        padding: 23px 18px;
+        border-radius: 12px;
+    }
+    .contacto-nota {
+        gap: 12px;
+    }
+}

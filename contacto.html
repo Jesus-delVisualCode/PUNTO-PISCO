@@ -19,27 +19,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 
      <!-- estilos de punto pisco -->    
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/esencial.css">
+    <link rel="stylesheet" href="css/contacto.css">
 
 </head>
 
 <body>
 
-    <header>
-        <img src="img/logo.png" alt="logo de punto pisco">
-        <h1>PUNTO PISCO</h1>
-    </header>
+    <!-- CABECERA -->
+<header class="cabecera-punto">
+    <a href="index.html" class="logo-enlace" aria-label="Ir al inicio">
+        <img src="img/logo.png" alt="Logo de Punto Pisco">
+    </a>
 
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #111111;">
+    <h1>PUNTO PISCO</h1>
+
+    <!-- Redes sociales -->
+    <div class="cabecera-redes">
+        <a href="https://www.facebook.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+        </a>
+    </div>
+</header>
+
+<!-- MENÚ PRINCIPAL -->
+<nav class="navbar navbar-expand-lg navbar-dark menu-punto">
     <div class="container">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#menuPuntoPisco" aria-controls="menuPuntoPisco"
-            aria-expanded="false" aria-label="Abrir menú">
-
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPuntoPisco"
+            aria-controls="menuPuntoPisco"
+            aria-expanded="false"
+            aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
         <div class="collapse navbar-collapse" id="menuPuntoPisco">
@@ -51,39 +79,72 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PISCO</a>
+                    <a class="nav-link" href="pisco.html">PISCO</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ICA</a>
+                    <a class="nav-link" href="ica.html">ICA</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PERÚ</a>
+                    <a class="nav-link" href="peru.html">PERÚ</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">DEPORTES</a>
+                    <a class="nav-link" href="deportes.html">DEPORTES</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TECNOLOGÍA</a>
+                    <a class="nav-link" href="tecnologia.html">TECNOLOGÍA</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CULTURA</a>
+                    <a class="nav-link" href="cultura.html">CULTURA</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
+                <!-- Información institucional -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="menuInformacion"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        INFORMACIÓN
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        aria-labelledby="menuInformacion">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="quienes-somos.html">
+                                Quiénes somos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="privacidad.html">
+                                Política de privacidad
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
             </ul>
-
         </div>
     </div>
 </nav>
-    <!-- MENU -->
+<!-- FIN DEL MENÚ -->
 
 
 <!-- CONTENIDO PRINCIPAL: CONTACTO -->
@@ -242,7 +303,7 @@
 
 
     <!-- PIE DE PAGINA -->
-    <footer class="pie-pagina">
+<footer class="pie-pagina">
 
     <div class="container">
 
@@ -323,18 +384,28 @@
 
         </div>
 
+        
         <!-- Derechos de autor -->
         <div class="footer-inferior">
             <p>
                 © 2026 Punto Pisco.
                 Todos los derechos reservados.
             </p>
+
+            <p class="footer-creador">
+                Un proyecto creado por Jesús Mejía.
+            </p>
         </div>
+
 
     </div>
 
-    </footer>
-    <!-- FIN DEL PIE DE PAGINA -->
+</footer>
+<!-- FIN DEL PIE DE PAGINA -->
 
     <!-- JavaScript de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>  
+    
+</body>
+
+</html>

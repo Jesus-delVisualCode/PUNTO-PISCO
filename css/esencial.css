@@ -1,0 +1,330 @@
+/* =========================================================
+   VARIABLES Y ESTILOS GENERALES
+========================================================= */
+
+:root {
+    --color-morado: #24113f;
+    --color-morado-medio: #6b35a5;
+    --color-morado-claro: #c5a1f0;
+    --color-fondo: #f4f4f4;
+    --color-blanco: #ffffff;
+    --color-texto: #29252f;
+    --color-texto-secundario: #625b6b;
+    --color-negro: #111111;
+    --fuente-principal: "Roboto", sans-serif;
+    --fuente-titulos: "Roboto Slab", serif;
+    --fuente-interfaz: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+}
+
+
+
+/* =========================================================
+   CABECERA Y REDES SOCIALES
+========================================================= */
+
+.cabecera-punto {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 115px;
+    padding: 15px 180px;
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+}
+
+.cabecera-punto h1 {
+    margin: 0;
+    font-family: var(--fuente-principal);
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-enlace {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.logo-enlace img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.cabecera-redes {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    transform: translateY(-50%);
+}
+
+.cabecera-redes a {
+    color: var(--color-blanco);
+    font-size: 21px;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.cabecera-redes a:hover {
+    color: var(--color-morado-claro);
+    transform: translateY(-3px);
+}
+
+
+
+/* =========================================================
+   MENÚ DE NAVEGACIÓN
+========================================================= */
+
+.menu-punto {
+    padding: 0;
+    background-color: var(--color-negro);
+    border-bottom: 3px solid #5b3288;
+}
+
+.menu-punto .navbar-nav {
+    gap: 5px;
+}
+
+.menu-punto .nav-link {
+    padding: 18px 13px !important;
+    color: #f5f5f5;
+    font-family: var(--fuente-interfaz);
+    font-size: 13px;
+    font-weight: 700;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-punto .nav-link:hover,
+.menu-punto .nav-link:focus {
+    background-color: #20172a;
+    color: var(--color-morado-claro);
+}
+
+/* Menú desplegable de Información */
+
+.menu-punto .dropdown-menu {
+    min-width: 220px;
+    margin-top: 0;
+    padding: 8px;
+    background-color: #1b1522;
+    border: 1px solid #49345d;
+    border-radius: 0 0 8px 8px;
+}
+
+.menu-punto .dropdown-item {
+    padding: 11px 12px;
+    color: #f5f5f5;
+    font-family: var(--fuente-interfaz);
+    font-size: 13px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-punto .dropdown-item:hover,
+.menu-punto .dropdown-item:focus {
+    background-color: #5b3288;
+    color: var(--color-blanco);
+}
+
+/* Botón hamburguesa */
+
+.menu-punto .navbar-toggler {
+    margin: 10px 0;
+    border-color: #8d6bb2;
+}
+
+.menu-punto .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(197, 161, 240, 0.3);
+}
+
+
+
+/* =========================================================
+   PIE DE PÁGINA
+========================================================= */
+
+.pie-pagina {
+    margin-top: 60px;
+    padding: 45px 0 0;
+    background-color: #08030e;
+    color: var(--color-blanco);
+}
+
+.footer-logo {
+    margin-bottom: 12px;
+    font-family: var(--fuente-principal);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.footer-descripcion {
+    color: #d8c5f0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-titulo {
+    margin-bottom: 18px;
+    color: var(--color-blanco);
+    font-family: var(--fuente-interfaz);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-enlaces {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-enlaces li {
+    margin-bottom: 10px;
+}
+
+.footer-enlaces a {
+    color: #d8c5f0;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-enlaces a:hover {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+/* Redes sociales del pie de página */
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.footer-redes a {
+    color: var(--color-blanco);
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+    color: #c9a5ff;
+}
+
+/* Franja inferior, derechos y crédito */
+
+.footer-inferior {
+    margin-top: 35px;
+    padding: 18px 0;
+    border-top: 1px solid #51366d;
+    text-align: center;
+}
+
+.footer-inferior p {
+    margin: 0;
+    color: #d8c5f0;
+    font-size: 12px;
+}
+
+.footer-inferior .footer-creador {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #b8b8b8;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+/* ADAPTACIONES RESPONSIVE */
+
+@media (max-width: 991.98px) {
+    .cabecera-punto {
+        min-height: 95px;
+        padding: 15px 80px;
+    }
+    .cabecera-punto h1 {
+        font-size: clamp(25px, 5vw, 42px);
+    }
+    .logo-enlace {
+        left: 15px;
+    }
+    .logo-enlace img {
+        width: 55px;
+        height: 55px;
+    }
+    .cabecera-redes {
+        right: 15px;
+        gap: 10px;
+    }
+    .cabecera-redes a {
+        font-size: 17px;
+    }
+    .menu-punto .navbar-collapse {
+        padding-bottom: 12px;
+    }
+    .menu-punto .navbar-nav {
+        gap: 0;
+    }
+    .menu-punto .nav-link {
+        padding: 12px 10px !important;
+        border-bottom: 1px solid #292929;
+    }
+    .menu-punto .dropdown-menu {
+        margin: 5px 0 10px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pie-pagina {
+        margin-top: 40px;
+        padding-top: 35px;
+    }
+    .footer-logo {
+        font-size: 25px;
+    }
+    .footer-inferior {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .cabecera-punto {
+        min-height: 85px;
+        padding: 12px 60px;
+    }
+    .cabecera-punto h1 {
+        font-size: clamp(20px, 5.5vw, 27px);
+        letter-spacing: 0;
+    }
+    .logo-enlace {
+        left: 8px;
+    }
+    .logo-enlace img {
+        width: 42px;
+        height: 42px;
+    }
+    .cabecera-redes {
+        right: 8px;
+        gap: 7px;
+    }
+    .cabecera-redes a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,148 @@
+/* =========================================================
+   PÁGINA: POLÍTICA DE PRIVACIDAD
+========================================================= */
+
+.privacidad-pagina {
+    padding-bottom: 70px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.privacidad-portada {
+    padding: 70px 20px;
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.privacidad-etiqueta {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #d0b5ff;
+    font-family: var(--fuente-interfaz);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.privacidad-portada h1 {
+    margin: 0 auto 18px;
+    font-family: var(--fuente-principal);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.privacidad-portada p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e5dfee;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.privacidad-documento {
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding: 45px;
+    background-color: var(--color-blanco);
+    border: 1px solid #e7e1ed;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(36, 17, 63, 0.06);
+}
+
+.privacidad-actualizacion {
+    margin-bottom: 25px;
+    color: #77717f;
+    font-size: 13px;
+}
+
+.privacidad-documento > p:not(.privacidad-actualizacion) {
+    color: #55515b;
+    line-height: 1.9;
+}
+
+.privacidad-documento section {
+    margin-top: 32px;
+}
+
+.privacidad-documento h2 {
+    margin-bottom: 14px;
+    color: var(--color-morado);
+    font-family: var(--fuente-titulos);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.privacidad-documento section p,
+.privacidad-documento li {
+    color: #55515b;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.privacidad-documento ul {
+    padding-left: 24px;
+}
+
+.privacidad-documento a {
+    color: #63369a;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.privacidad-documento a:hover {
+    color: var(--color-morado);
+}
+
+.privacidad-nota {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 22px;
+    background-color: #f0eaf8;
+    border-left: 4px solid #63369a;
+    border-radius: 8px;
+}
+
+.privacidad-nota i {
+    color: #63369a;
+    font-size: 25px;
+}
+
+.privacidad-nota p {
+    margin: 0;
+    color: #43374f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+
+/* ADAPTACIONES RESPONSIVE */
+
+@media (max-width: 576px) {
+    .privacidad-portada {
+        padding: 50px 20px;
+    }
+    .privacidad-portada p {
+        font-size: 15px;
+    }
+    .privacidad-documento {
+        margin-top: 25px;
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+    .privacidad-documento h2 {
+        font-size: 20px;
+    }
+    .privacidad-documento section p,
+    .privacidad-documento li {
+        font-size: 14px;
+    }
+    .privacidad-nota {
+        padding: 16px;
+    }
+}
