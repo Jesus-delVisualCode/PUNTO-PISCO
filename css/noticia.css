@@ -1,10 +1,11 @@
+
 /* =========================================
    1. CONTENIDO GENERAL
 ========================================= */
 
 .contenido-noticia {
     background-color: #f4f4f6;
-    padding: 35px 0 70px;
+    padding: 40px 0 70px;
     min-height: 100vh;
 }
 
@@ -25,6 +26,7 @@
     margin-bottom: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    line-height: 1.5;
     color: #777;
 }
 
@@ -52,7 +54,7 @@
     width: 100%;
     max-width: 950px;
     margin: 0 auto;
-    padding: 45px 55px;
+    padding: 48px 55px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 3px 18px rgba(0, 0, 0, 0.055);
@@ -64,12 +66,12 @@
 ========================================= */
 
 .encabezado-noticia {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .noticia-categoria {
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     padding: 7px 13px;
     background-color: #24113f;
     color: #ffffff;
@@ -78,24 +80,25 @@
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .encabezado-noticia h1 {
-    margin: 0 0 18px;
+    margin: 0 0 19px;
     color: #211b29;
     font-family: 'Roboto Slab', serif;
-    font-size: clamp(30px, 4vw, 43px);
+    font-size: clamp(32px, 4vw, 44px);
     font-weight: 700;
-    line-height: 1.22;
+    line-height: 1.2;
     letter-spacing: -0.6px;
 }
 
 .bajada-noticia {
-    margin: 0 0 23px;
+    margin: 0 0 24px;
     color: #55515b;
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 
@@ -108,7 +111,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 12px 25px;
-    padding: 17px 0;
+    padding: 18px 0;
     border-top: 1px solid #e9e6ed;
     border-bottom: 1px solid #e9e6ed;
 }
@@ -119,7 +122,7 @@
     gap: 7px;
     color: #696570;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .datos-noticia i {
@@ -136,10 +139,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 15px;
+    margin-top: 16px;
     color: #77717e;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .fecha-acontecimiento i {
@@ -156,7 +160,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    margin: 30px 0;
+    margin: 32px 0;
     overflow: hidden;
     background-color: #17121e;
     border-radius: 7px;
@@ -177,24 +181,24 @@
 
 .imagen-principal-noticia {
     width: 100%;
-    margin: 25px 0 40px;
+    margin: 28px 0 42px;
 }
 
 .imagen-principal-noticia img {
     display: block;
     width: 100%;
-    max-height: 500px;
+    max-height: 520px;
     object-fit: cover;
     object-position: center;
     border-radius: 7px;
 }
 
 .imagen-principal-noticia figcaption {
-    margin-top: 10px;
+    margin-top: 11px;
     color: #77727e;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.55;
     text-align: left;
 }
 
@@ -213,18 +217,63 @@
 }
 
 .cuerpo-noticia p {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 }
 
 .cuerpo-noticia h2 {
-    margin: 38px 0 18px;
-    padding-left: 14px;
+    margin: 42px 0 19px;
+    padding-left: 15px;
     border-left: 4px solid #542d7d;
     color: #24113f;
     font-family: 'Roboto Slab', serif;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 1.35;
+}
+
+.cuerpo-noticia h3 {
+    margin: 30px 0 14px;
+    color: #332343;
+    font-family: 'Roboto Slab', serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.cuerpo-noticia ul,
+.cuerpo-noticia ol {
+    margin-bottom: 24px;
+    padding-left: 25px;
+}
+
+.cuerpo-noticia li {
+    margin-bottom: 9px;
+}
+
+.cuerpo-noticia a {
+    color: #542d7d;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.cuerpo-noticia a:hover {
+    color: #24113f;
+}
+
+.cuerpo-noticia blockquote {
+    margin: 28px 0;
+    padding: 18px 22px;
+    border-left: 4px solid #542d7d;
+    background-color: #f5f2f8;
+    color: #51465c;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.cuerpo-noticia img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -235,7 +284,7 @@
 .imagen-adicional-noticia {
     width: 90%;
     max-width: 720px;
-    margin: 32px auto;
+    margin: 35px auto;
 }
 
 .imagen-adicional-noticia img {
@@ -248,11 +297,11 @@
 }
 
 .imagen-adicional-noticia figcaption {
-    margin-top: 9px;
+    margin-top: 10px;
     color: #77727e;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.55;
     text-align: left;
 }
 
@@ -263,14 +312,14 @@
 
 .fuentes-noticia {
     max-width: 780px;
-    margin: 45px auto 0;
-    padding: 25px 0;
+    margin: 48px auto 0;
+    padding: 26px 0;
     border-top: 1px solid #e9e6ed;
     border-bottom: 1px solid #e9e6ed;
 }
 
 .fuentes-noticia h3 {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
     color: #24113f;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
@@ -283,11 +332,12 @@
 }
 
 .fuentes-noticia li {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     color: #555;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
 }
 
 .fuentes-noticia li:last-child {
@@ -316,7 +366,7 @@
     justify-content: flex-end;
     gap: 13px;
     max-width: 780px;
-    margin: 25px auto 0;
+    margin: 27px auto 0;
 }
 
 .compartir-noticia span {
@@ -330,8 +380,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 39px;
+    height: 39px;
     background-color: #f0edf4;
     color: #41205f;
     border-radius: 50%;
@@ -350,159 +400,187 @@
 
 
 /* =========================================
-   13. ADAPTACIÓN PARA TABLETS
+   13. ACCESIBILIDAD
+========================================= */
+
+.ruta-noticia a:focus-visible,
+.fuentes-noticia a:focus-visible,
+.compartir-noticia a:focus-visible,
+.cuerpo-noticia a:focus-visible {
+    outline: 3px solid #9b73c5;
+    outline-offset: 4px;
+}
+
+
+/* =========================================
+   14. ADAPTACIÓN PARA TABLETS
 ========================================= */
 
 @media (max-width: 991px) {
 
     .contenido-noticia {
-        padding: 25px 0 50px;
+        padding: 28px 0 55px;
     }
 
     .articulo-noticia {
-        padding: 35px 35px;
+        padding: 38px 35px;
     }
 
     .encabezado-noticia h1 {
-        font-size: 34px;
+        font-size: clamp(30px, 4vw, 36px);
     }
 
     .bajada-noticia {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .cuerpo-noticia {
-        font-size: 16px;
+        font-size: 16.5px;
+    }
+
+    .cuerpo-noticia h2 {
+        font-size: 24px;
     }
 
 }
 
 
 /* =========================================
-   14. ADAPTACIÓN PARA CELULARES
+   15. ADAPTACIÓN PARA CELULARES
 ========================================= */
 
 @media (max-width: 576px) {
 
     .contenido-noticia {
-        padding: 18px 0 35px;
+        padding: 20px 0 38px;
     }
 
     .ruta-noticia {
         gap: 7px;
-        margin-bottom: 16px;
+        margin-bottom: 17px;
         font-size: 12px;
     }
 
     .articulo-noticia {
-        padding: 25px 18px;
+        padding: 26px 19px;
         border-radius: 7px;
     }
 
     .encabezado-noticia {
-        margin-bottom: 23px;
+        margin-bottom: 24px;
     }
 
     .noticia-categoria {
-        margin-bottom: 13px;
+        margin-bottom: 14px;
         padding: 6px 10px;
         font-size: 11px;
     }
 
     .encabezado-noticia h1 {
-        margin-bottom: 14px;
-        font-size: 29px;
-        line-height: 1.25;
+        margin-bottom: 15px;
+        font-size: clamp(27px, 7vw, 32px);
+        line-height: 1.23;
+        letter-spacing: -0.4px;
     }
 
     .bajada-noticia {
-        margin-bottom: 18px;
+        margin-bottom: 19px;
         font-size: 16px;
-        line-height: 1.55;
+        line-height: 1.6;
     }
 
     .datos-noticia {
         align-items: flex-start;
         flex-direction: column;
-        gap: 10px;
-        padding: 14px 0;
+        gap: 11px;
+        padding: 15px 0;
     }
 
     .datos-noticia span {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .fecha-acontecimiento {
         align-items: flex-start;
-        font-size: 12px;
-        line-height: 1.5;
+        font-size: 13px;
     }
 
     .video-noticia {
-        margin: 22px 0;
+        margin: 23px 0;
         border-radius: 5px;
     }
 
     .imagen-principal-noticia {
-        margin: 22px 0 30px;
+        margin: 23px 0 31px;
     }
 
     .imagen-principal-noticia img {
-        max-height: 300px;
+        max-height: 320px;
         border-radius: 5px;
     }
 
     .imagen-principal-noticia figcaption {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .cuerpo-noticia {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.8;
     }
 
     .cuerpo-noticia p {
-        margin-bottom: 18px;
+        margin-bottom: 19px;
     }
 
     .cuerpo-noticia h2 {
-        margin: 30px 0 15px;
-        padding-left: 11px;
-        font-size: 21px;
+        margin: 33px 0 16px;
+        padding-left: 12px;
+        font-size: 22px;
+    }
+
+    .cuerpo-noticia h3 {
+        margin: 26px 0 13px;
+        font-size: 19px;
+    }
+
+    .cuerpo-noticia blockquote {
+        margin: 23px 0;
+        padding: 15px 17px;
+        font-size: 16px;
     }
 
     .imagen-adicional-noticia {
         width: 100%;
-        margin: 25px auto;
+        margin: 27px auto;
     }
 
     .imagen-adicional-noticia img {
-        max-height: 280px;
+        max-height: 290px;
         border-radius: 5px;
     }
 
     .imagen-adicional-noticia figcaption {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .fuentes-noticia {
-        margin-top: 32px;
-        padding: 20px 0;
+        margin-top: 34px;
+        padding: 21px 0;
     }
 
     .fuentes-noticia h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .fuentes-noticia li {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .compartir-noticia {
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
+        gap: 11px;
+        margin-top: 22px;
     }
 
     .compartir-noticia span {
@@ -510,9 +588,38 @@
     }
 
     .compartir-noticia a {
-        width: 35px;
-        height: 35px;
+        width: 36px;
+        height: 36px;
         font-size: 16px;
+    }
+
+}
+
+
+/* =========================================
+   16. CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .articulo-noticia {
+        padding: 23px 15px;
+    }
+
+    .encabezado-noticia h1 {
+        font-size: 26px;
+    }
+
+    .bajada-noticia {
+        font-size: 15px;
+    }
+
+    .cuerpo-noticia {
+        font-size: 15px;
+    }
+
+    .cuerpo-noticia h2 {
+        font-size: 20px;
     }
 
 }

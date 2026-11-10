@@ -4,826 +4,1406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Punto Pisco</title>
 
-     <!-- Bootstrap -->
+    <title>Punto Pisco | Noticias de Pisco, Ica y el Perú</title>
+
+    <meta name="description"
+        content="Punto Pisco: información y noticias de Pisco, Ica y todo el Perú. Actualidad, política, sociedad, deportes, cultura y más.">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap iconos -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <!-- tipos de letra -->
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 
-     <!-- estilos de punto pisco -->    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos de Punto Pisco -->
     <link rel="stylesheet" href="css/esencial.css">
     <link rel="stylesheet" href="css/inicio.css">
-    
 
 </head>
 
 <body>
 
-    
-<!-- CABECERA -->
-<header class="cabecera-punto">
-    <a href="index.html" class="logo-enlace" aria-label="Ir al inicio">
-        <img src="img/logo.png" alt="Logo de Punto Pisco">
-    </a>
+    <!-- CABECERA-->
 
-    <h1>PUNTO PISCO</h1>
+    <header class="cabecera-punto">
 
-    <!-- Redes sociales -->
-    <div class="cabecera-redes">
-        <a href="https://www.facebook.com/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Facebook">
-            <i class="bi bi-facebook"></i>
+        <a href="index.html" class="logo-enlace" aria-label="Ir al inicio">
+            <img src="img/logo.png" alt="Logo de Punto Pisco">
         </a>
 
-        <a href="https://www.instagram.com/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-        </a>
+        <h1>PUNTO PISCO</h1>
 
-        <a href="https://www.tiktok.com/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="TikTok">
-            <i class="bi bi-tiktok"></i>
-        </a>
+        <!-- Redes sociales -->
+        <div class="cabecera-redes">
+
+            <a href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENÚ PRINCIPAL -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu-punto">
+
+        <div class="container">
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPuntoPisco"
+                aria-controls="menuPuntoPisco"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="menuPuntoPisco">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="index.html"
+                            aria-current="page">
+                            INICIO
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="actualidad.html">
+                            ACTUALIDAD
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica.html">
+                            POLÍTICA
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sociedad.html">
+                            SOCIEDAD
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="deportes.html">
+                            DEPORTES
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cultura.html">
+                            CULTURA
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="turismo.html">
+                            TURISMO
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="economia.html">
+                            ECONOMÍA
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tecnologia.html">
+                            TECNOLOGÍA
+                        </a>
+                    </li>
+
+
+                    <!-- Información institucional -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            id="menuInformacion"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            INFORMACIÓN
+                        </a>
+
+                        <ul class="dropdown-menu"
+                            aria-labelledby="menuInformacion">
+
+                            <li>
+                                <a class="dropdown-item" href="quienes-somos.html">
+                                    Quiénes somos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="privacidad.html">
+                                    Política de privacidad
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main class="portada-punto">
+
+
+        <!-- FRANJA DE ÚLTIMA HORA -->
+
+        <section class="franja-ultima-hora" aria-label="Última hora">
+
+            <div class="container franja-contenido">
+
+                <span class="etiqueta-ultima-hora">
+                    <i class="bi bi-broadcast"></i>
+                    ÚLTIMA HORA
+                </span>
+
+                <a href="noticias/actualidad/noticia-1.html"
+                    class="texto-ultima-hora">
+
+                    Información de última hora: espacio destinado a noticias urgentes y actualizaciones importantes.
+
+                </a>
+
+                <span class="indicador-ultima-hora">
+                    <i class="bi bi-circle-fill"></i>
+                    EN VIVO
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CUERPO DE LA PORTADA -->
+
+        <div class="container-fluid contenido-portada px-3 px-xl-4">
+
+            <div class="row g-4">
+
+
+                <!-- COLUMNA PRINCIPAL -->
+
+                <div class="col-12 col-lg-10 contenido-editorial">
+
+
+                    <!-- NOTICIA PRINCIPAL -->
+
+                    <section class="bloque-principal">
+
+                        <div class="titulo-bloque">
+                            <span>PORTADA</span>
+                        </div>
+
+
+                        <article class="noticia-principal">
+
+                            <a href="noticias/actualidad/noticia-1.html"
+                                class="enlace-imagen-principal">
+
+                                <img src="img/inicio/noticia-principal.jpg"
+                                    alt="Imagen de la noticia principal"
+                                    class="imagen-principal">
+
+                            </a>
+
+
+                            <div class="informacion-principal">
+
+                                <div class="metadatos-principal">
+
+                                    <span class="etiqueta-categoria">
+                                        ACTUALIDAD
+                                    </span>
+
+                                    <span class="etiqueta-localidad">
+                                        PISCO
+                                    </span>
+
+                                </div>
+
+
+                                <h2 class="titulo-principal">
+
+                                    Título de la noticia más importante del momento
+
+                                </h2>
+
+
+                                <p class="resumen-principal">
+
+                                    Aquí se mostrará un resumen amplio de la noticia principal.
+                                    Este espacio permitirá presentar los acontecimientos más
+                                    relevantes con información clara y suficiente para despertar
+                                    el interés del lector.
+
+                                </p>
+
+
+                                <div class="datos-noticia">
+
+                                    <span>
+                                        <i class="bi bi-calendar3"></i>
+                                        Fecha de publicación
+                                    </span>
+
+                                    <span>
+                                        <i class="bi bi-person"></i>
+                                        Redacción Punto Pisco
+                                    </span>
+
+                                </div>
+
+
+                                <a href="noticias/actualidad/noticia-1.html"
+                                    class="enlace-noticia">
+
+                                    Leer noticia completa
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </section>
+
+
+
+                    <!-- NOTICIAS DESTACADAS -->
+
+                    <section class="seccion-portada seccion-destacadas">
+
+                        <div class="encabezado-seccion">
+
+                            <div>
+                                <span class="subtitulo-seccion">SELECCIÓN EDITORIAL</span>
+                                <h2>Noticias destacadas</h2>
+                            </div>
+
+                            <span class="icono-seccion">
+                                <i class="bi bi-stars"></i>
+                            </span>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <!-- Destacada 1 -->
+
+                            <div class="col-12 col-md-6">
+
+                                <article class="tarjeta-destacada">
+
+                                    <a href="noticias/pisco/noticia-1.html">
+
+                                        <img src="img/inicio/destacada-1.jpg"
+                                            alt="Imagen de noticia destacada">
+
+                                    </a>
+
+                                    <div class="contenido-destacada">
+
+                                        <span class="categoria-tarjeta">
+                                            SOCIEDAD
+                                        </span>
+
+                                        <h3>
+                                            <a href="noticias/pisco/noticia-1.html">
+                                                Título de la primera noticia destacada
+                                            </a>
+                                        </h3>
+
+                                        <p>
+                                            Breve resumen del acontecimiento para presentar
+                                            su importancia al lector.
+                                        </p>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+
+
+                            <!-- Destacada 2 -->
+
+                            <div class="col-12 col-md-6">
+
+                                <article class="tarjeta-destacada">
+
+                                    <a href="noticias/actualidad/noticia-2.html">
+
+                                        <img src="img/inicio/destacada-2.jpg"
+                                            alt="Imagen de otra noticia destacada">
+
+                                    </a>
+
+                                    <div class="contenido-destacada">
+
+                                        <span class="categoria-tarjeta">
+                                            POLÍTICA
+                                        </span>
+
+                                        <h3>
+                                            <a href="noticias/actualidad/noticia-2.html">
+                                                Título de la segunda noticia destacada
+                                            </a>
+                                        </h3>
+
+                                        <p>
+                                            Resumen breve de otro acontecimiento
+                                            importante de la actualidad.
+                                        </p>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- NOTICIAS RECIENTES -->
+
+                    <section class="seccion-portada seccion-recientes">
+
+                        <div class="encabezado-seccion">
+
+                            <div>
+                                <span class="subtitulo-seccion">LO MÁS RECIENTE</span>
+                                <h2>Últimas noticias</h2>
+                            </div>
+
+                            <a href="actualidad.html" class="enlace-seccion">
+                                Ver actualidad
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="lista-noticias-recientes">
+
+
+                            <!-- Noticia reciente 1 -->
+
+                            <article class="noticia-reciente">
+
+                                <a href="noticias/actualidad/noticia-3.html"
+                                    class="imagen-reciente">
+
+                                    <img src="img/inicio/reciente-1.jpg"
+                                        alt="Imagen de noticia reciente">
+
+                                </a>
+
+                                <div class="contenido-reciente">
+
+                                    <div class="metadatos-reciente">
+
+                                        <span>ACTUALIDAD</span>
+                                        <span>09 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/actualidad/noticia-3.html">
+                                            Título de una noticia publicada recientemente
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Resumen de la noticia. Aquí se presentará una
+                                        descripción breve del acontecimiento.
+                                    </p>
+
+                                    <a href="noticias/actualidad/noticia-3.html"
+                                        class="leer-reciente">
+                                        Leer más
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- Noticia reciente 2 -->
+
+                            <article class="noticia-reciente">
+
+                                <a href="noticias/sociedad/noticia-1.html"
+                                    class="imagen-reciente">
+
+                                    <img src="img/inicio/reciente-2.jpg"
+                                        alt="Imagen de noticia reciente">
+
+                                </a>
+
+                                <div class="contenido-reciente">
+
+                                    <div class="metadatos-reciente">
+
+                                        <span>SOCIEDAD</span>
+                                        <span>08 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/sociedad/noticia-1.html">
+                                            Título de otra noticia reciente
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Resumen breve del acontecimiento y los detalles
+                                        más importantes de la información.
+                                    </p>
+
+                                    <a href="noticias/sociedad/noticia-1.html"
+                                        class="leer-reciente">
+                                        Leer más
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- Noticia reciente 3 -->
+
+                            <article class="noticia-reciente">
+
+                                <a href="noticias/deportes/noticia-1.html"
+                                    class="imagen-reciente">
+
+                                    <img src="img/inicio/reciente-3.jpg"
+                                        alt="Imagen de noticia reciente">
+
+                                </a>
+
+                                <div class="contenido-reciente">
+
+                                    <div class="metadatos-reciente">
+
+                                        <span>DEPORTES</span>
+                                        <span>07 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/deportes/noticia-1.html">
+                                            Título de una noticia del ámbito deportivo
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Una descripción corta para conocer el contenido
+                                        de esta publicación.
+                                    </p>
+
+                                    <a href="noticias/deportes/noticia-1.html"
+                                        class="leer-reciente">
+                                        Leer más
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- Noticia reciente 4 -->
+
+                            <article class="noticia-reciente">
+
+                                <a href="noticias/cultura/noticia-1.html"
+                                    class="imagen-reciente">
+
+                                    <img src="img/inicio/reciente-4.jpg"
+                                        alt="Imagen de noticia reciente">
+
+                                </a>
+
+                                <div class="contenido-reciente">
+
+                                    <div class="metadatos-reciente">
+
+                                        <span>CULTURA</span>
+                                        <span>06 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/cultura/noticia-1.html">
+                                            Título de una noticia sobre cultura
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Resumen de la publicación con información
+                                        relevante para el público.
+                                    </p>
+
+                                    <a href="noticias/cultura/noticia-1.html"
+                                        class="leer-reciente">
+                                        Leer más
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- ACCESOS GEOGRÁFICOS -->
+
+                    <section class="seccion-portada seccion-geografica">
+
+                        <div class="encabezado-seccion">
+
+                            <div>
+                                <span class="subtitulo-seccion">INFORMACIÓN POR UBICACIÓN</span>
+                                <h2>Noticias por territorio</h2>
+                            </div>
+
+                            <span class="icono-seccion">
+                                <i class="bi bi-geo-alt"></i>
+                            </span>
+
+                        </div>
+
+
+                        <div class="contenedor-geografico">
+
+
+                            <!-- PISCO -->
+
+                            <a href="pisco.html" class="tarjeta-geografica">
+
+                                <img src="img/geografia/pisco.jpg"
+                                    alt="Paisaje representativo de Pisco">
+
+                                <div class="capa-geografica">
+
+                                    <span>PROVINCIA</span>
+                                    <h3>PISCO</h3>
+
+                                    <p>
+                                        Noticias de nuestra tierra
+                                    </p>
+
+                                    <span class="boton-geografico">
+                                        Explorar noticias
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+
+
+                            <!-- ICA -->
+
+                            <a href="ica.html" class="tarjeta-geografica">
+
+                                <img src="img/geografia/ica.jpg"
+                                    alt="Paisaje representativo de Ica">
+
+                                <div class="capa-geografica">
+
+                                    <span>DEPARTAMENTO</span>
+                                    <h3>ICA</h3>
+
+                                    <p>
+                                        Información de nuestra región
+                                    </p>
+
+                                    <span class="boton-geografico">
+                                        Explorar noticias
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+
+
+                            <!-- PERÚ -->
+
+                            <a href="peru.html" class="tarjeta-geografica">
+
+                                <img src="img/geografia/peru.jpg"
+                                    alt="Paisaje representativo del Perú">
+
+                                <div class="capa-geografica">
+
+                                    <span>ÁMBITO NACIONAL</span>
+                                    <h3>PERÚ</h3>
+
+                                    <p>
+                                        Noticias de todo el país
+                                    </p>
+
+                                    <span class="boton-geografico">
+                                        Explorar noticias
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- NOTICIAS MÁS LEÍDAS -->
+
+                    <section class="seccion-portada seccion-mas-leidas">
+
+                        <div class="encabezado-seccion">
+
+                            <div>
+                                <span class="subtitulo-seccion">INTERÉS DE LOS LECTORES</span>
+                                <h2>Las más leídas</h2>
+                            </div>
+
+                            <span class="icono-seccion">
+                                <i class="bi bi-fire"></i>
+                            </span>
+
+                        </div>
+
+
+                        <div class="lista-mas-leidas">
+
+
+                            <!-- Más leída 1 -->
+
+                            <article class="noticia-mas-leida">
+
+                                <span class="numero-mas-leida">01</span>
+
+                                <a href="noticias/actualidad/noticia-4.html"
+                                    class="imagen-mas-leida">
+
+                                    <img src="img/inicio/mas-leida-1.jpg"
+                                        alt="Imagen de noticia más leída">
+
+                                </a>
+
+                                <div class="contenido-mas-leida">
+
+                                    <span class="categoria-tarjeta">
+                                        ACTUALIDAD
+                                    </span>
+
+                                    <h3>
+                                        <a href="noticias/actualidad/noticia-4.html">
+                                            Título de la noticia más consultada
+                                        </a>
+                                    </h3>
+
+                                    <span class="visitas-noticia">
+                                        <i class="bi bi-eye"></i>
+                                        Más consultada
+                                    </span>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- Más leída 2 -->
+
+                            <article class="noticia-mas-leida">
+
+                                <span class="numero-mas-leida">02</span>
+
+                                <a href="noticias/politica/noticia-1.html"
+                                    class="imagen-mas-leida">
+
+                                    <img src="img/inicio/mas-leida-2.jpg"
+                                        alt="Imagen de noticia más leída">
+
+                                </a>
+
+                                <div class="contenido-mas-leida">
+
+                                    <span class="categoria-tarjeta">
+                                        POLÍTICA
+                                    </span>
+
+                                    <h3>
+                                        <a href="noticias/politica/noticia-1.html">
+                                            Título de otra noticia popular
+                                        </a>
+                                    </h3>
+
+                                    <span class="visitas-noticia">
+                                        <i class="bi bi-eye"></i>
+                                        Más consultada
+                                    </span>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- Más leída 3 -->
+
+                            <article class="noticia-mas-leida">
+
+                                <span class="numero-mas-leida">03</span>
+
+                                <a href="noticias/turismo/noticia-1.html"
+                                    class="imagen-mas-leida">
+
+                                    <img src="img/inicio/mas-leida-3.jpg"
+                                        alt="Imagen de noticia más leída">
+
+                                </a>
+
+                                <div class="contenido-mas-leida">
+
+                                    <span class="categoria-tarjeta">
+                                        TURISMO
+                                    </span>
+
+                                    <h3>
+                                        <a href="noticias/turismo/noticia-1.html">
+                                            Título de una noticia de interés turístico
+                                        </a>
+                                    </h3>
+
+                                    <span class="visitas-noticia">
+                                        <i class="bi bi-eye"></i>
+                                        Más consultada
+                                    </span>
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- PUBLICIDAD ADICIONAL-->
+
+                    <section class="publicidad-adicional">
+
+                        <div class="etiqueta-publicidad">
+                            PUBLICIDAD
+                        </div>
+
+                        <a href="#"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <img src="img/publicidad/publicidad-horizontal.jpg"
+                                alt="Espacio publicitario">
+
+                        </a>
+
+                    </section>
+
+
+
+                    <!-- CARRUSEL DE CATEGORÍAS -->
+
+                    <section class="seccion-portada seccion-categorias">
+
+                        <div class="encabezado-seccion">
+
+                            <div>
+                                <span class="subtitulo-seccion">EXPLORA NUESTRO CONTENIDO</span>
+                                <h2>Explora las categorías</h2>
+                            </div>
+
+                            <span class="icono-seccion">
+                                <i class="bi bi-grid"></i>
+                            </span>
+
+                        </div>
+
+
+                        <div class="carrusel-categorias">
+
+
+                            <!-- Actualidad -->
+
+                            <a href="actualidad.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/actualidad.jpg"
+                                    alt="Actualidad">
+
+                                <span>ACTUALIDAD</span>
+
+                            </a>
+
+
+
+                            <!-- Política -->
+
+                            <a href="politica.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/politica.jpg"
+                                    alt="Política">
+
+                                <span>POLÍTICA</span>
+
+                            </a>
+
+
+
+                            <!-- Sociedad -->
+
+                            <a href="sociedad.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/sociedad.jpg"
+                                    alt="Sociedad">
+
+                                <span>SOCIEDAD</span>
+
+                            </a>
+
+
+
+                            <!-- Deportes -->
+
+                            <a href="deportes.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/deportes.jpg"
+                                    alt="Deportes">
+
+                                <span>DEPORTES</span>
+
+                            </a>
+
+
+
+                            <!-- Cultura -->
+
+                            <a href="cultura.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/cultura.jpg"
+                                    alt="Cultura">
+
+                                <span>CULTURA</span>
+
+                            </a>
+
+
+
+                            <!-- Turismo -->
+
+                            <a href="turismo.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/turismo.jpg"
+                                    alt="Turismo">
+
+                                <span>TURISMO</span>
+
+                            </a>
+
+
+
+                            <!-- Economía -->
+
+                            <a href="economia.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/economia.jpg"
+                                    alt="Economía">
+
+                                <span>ECONOMÍA</span>
+
+                            </a>
+
+
+
+                            <!-- Tecnología -->
+
+                            <a href="tecnologia.html" class="tarjeta-categoria">
+
+                                <img src="img/inicio/tecnologia.jpg"
+                                    alt="Tecnología">
+
+                                <span>TECNOLOGÍA</span>
+
+                            </a>
+
+
+                        </div>
+
+                    </section>
+
+                    <!-- SUBCATEGORÍAS DE NOTICIAS -->
+                    <section class="seccion-subcategorias">
+                    <div class="container">
+
+        <!-- ACTUALIDAD -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>ACTUALIDAD</h2>
+                <a href="actualidad.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/actualidad/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/actualidad-1.jpg" alt="Noticia de actualidad">
+                    <h3>Título de la primera noticia de actualidad</h3>
+                </a>
+                <a href="noticias/actualidad/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/actualidad-2.jpg" alt="Noticia de actualidad">
+                    <h3>Título de la segunda noticia de actualidad</h3>
+                </a>
+                <a href="noticias/actualidad/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/actualidad-3.jpg" alt="Noticia de actualidad">
+                    <h3>Título de la tercera noticia de actualidad</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- POLÍTICA -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>POLÍTICA</h2>
+                <a href="politica.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/politica/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/politica-1.jpg" alt="Noticia de política">
+                    <h3>Título de la primera noticia de política</h3>
+                </a>
+                <a href="noticias/politica/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/politica-2.jpg" alt="Noticia de política">
+                    <h3>Título de la segunda noticia de política</h3>
+                </a>
+                <a href="noticias/politica/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/politica-3.jpg" alt="Noticia de política">
+                    <h3>Título de la tercera noticia de política</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- SOCIEDAD -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>SOCIEDAD</h2>
+                <a href="sociedad.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/sociedad/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/sociedad-1.jpg" alt="Noticia de sociedad">
+                    <h3>Título de la primera noticia de sociedad</h3>
+                </a>
+                <a href="noticias/sociedad/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/sociedad-2.jpg" alt="Noticia de sociedad">
+                    <h3>Título de la segunda noticia de sociedad</h3>
+                </a>
+                <a href="noticias/sociedad/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/sociedad-3.jpg" alt="Noticia de sociedad">
+                    <h3>Título de la tercera noticia de sociedad</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- DEPORTES -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>DEPORTES</h2>
+                <a href="deportes.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/deportes/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/deportes-1.jpg" alt="Noticia de deportes">
+                    <h3>Título de la primera noticia deportiva</h3>
+                </a>
+                <a href="noticias/deportes/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/deportes-2.jpg" alt="Noticia de deportes">
+                    <h3>Título de la segunda noticia deportiva</h3>
+                </a>
+                <a href="noticias/deportes/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/deportes-3.jpg" alt="Noticia de deportes">
+                    <h3>Título de la tercera noticia deportiva</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- CULTURA -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>CULTURA</h2>
+                <a href="cultura.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/cultura/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/cultura-1.jpg" alt="Noticia de cultura">
+                    <h3>Título de la primera noticia cultural</h3>
+                </a>
+                <a href="noticias/cultura/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/cultura-2.jpg" alt="Noticia de cultura">
+                    <h3>Título de la segunda noticia cultural</h3>
+                </a>
+                <a href="noticias/cultura/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/cultura-3.jpg" alt="Noticia de cultura">
+                    <h3>Título de la tercera noticia cultural</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- TURISMO -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>TURISMO</h2>
+                <a href="turismo.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/turismo/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/turismo-1.jpg" alt="Noticia de turismo">
+                    <h3>Título de la primera noticia de turismo</h3>
+                </a>
+                <a href="noticias/turismo/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/turismo-2.jpg" alt="Noticia de turismo">
+                    <h3>Título de la segunda noticia de turismo</h3>
+                </a>
+                <a href="noticias/turismo/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/turismo-3.jpg" alt="Noticia de turismo">
+                    <h3>Título de la tercera noticia de turismo</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- ECONOMÍA -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>ECONOMÍA</h2>
+                <a href="economia.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/economia/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/economia-1.jpg" alt="Noticia de economía">
+                    <h3>Título de la primera noticia económica</h3>
+                </a>
+                <a href="noticias/economia/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/economia-2.jpg" alt="Noticia de economía">
+                    <h3>Título de la segunda noticia económica</h3>
+                </a>
+                <a href="noticias/economia/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/economia-3.jpg" alt="Noticia de economía">
+                    <h3>Título de la tercera noticia económica</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍA -->
+        <section class="bloque-subcategoria">
+            <div class="subcategoria-encabezado">
+                <h2>TECNOLOGÍA</h2>
+                <a href="tecnologia.html">VER TODAS <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="subcategoria-grid">
+                <a href="noticias/tecnologia/noticia-1.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/tecnologia-1.jpg" alt="Noticia de tecnología">
+                    <h3>Título de la primera noticia tecnológica</h3>
+                </a>
+                <a href="noticias/tecnologia/noticia-2.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/tecnologia-2.jpg" alt="Noticia de tecnología">
+                    <h3>Título de la segunda noticia tecnológica</h3>
+                </a>
+                <a href="noticias/tecnologia/noticia-3.html" class="subcategoria-noticia">
+                    <img src="img/subcategorias/tecnologia-3.jpg" alt="Noticia de tecnología">
+                    <h3>Título de la tercera noticia tecnológica</h3>
+                </a>
+            </div>
+        </section>
+
     </div>
-</header>
+                    </section>
+                    <!-- FIN DE SUBCATEGORÍAS -->
 
-<!-- MENÚ PRINCIPAL -->
-<nav class="navbar navbar-expand-lg navbar-dark menu-punto">
-    <div class="container">
 
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPuntoPisco"
-            aria-controls="menuPuntoPisco"
-            aria-expanded="false"
-            aria-label="Abrir menú">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                </div>
 
-        <div class="collapse navbar-collapse" id="menuPuntoPisco">
 
-            <ul class="navbar-nav mx-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">INICIO</a>
-                </li>
+                <!-- PUBLICIDAD STICKY -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pisco.html">PISCO</a>
-                </li>
+                <aside class="col-lg-2 columna-publicidad">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="ica.html">ICA</a>
-                </li>
+                    <div class="publicidad-sticky">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="peru.html">PERÚ</a>
-                </li>
+                        <div class="etiqueta-publicidad">
+                            PUBLICIDAD
+                        </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="deportes.html">DEPORTES</a>
-                </li>
+                        <a href="#"
+                            target="_blank"
+                            rel="noopener noreferrer">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="tecnologia.html">TECNOLOGÍA</a>
-                </li>
+                            <img src="img/publicidad/publicidad-vertical.jpg"
+                                alt="Publicidad de Punto Pisco">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="cultura.html">CULTURA</a>
-                </li>
+                        </a>
 
-                <!-- Información institucional -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       id="menuInformacion"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        INFORMACIÓN
-                    </a>
+                    </div>
 
-                    <ul class="dropdown-menu"
-                        aria-labelledby="menuInformacion">
+                </aside>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+ 
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="pie-pagina">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- Identidad del periódico -->
+
+                <div class="col-12 col-md-5">
+
+                    <h2 class="footer-logo">
+                        PUNTO PISCO
+                    </h2>
+
+                    <p class="footer-descripcion">
+                        La información de nuestra tierra,
+                        en un solo lugar.
+                    </p>
+
+
+                    <!-- Redes sociales -->
+
+                    <div class="footer-redes">
+
+                        <a href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="https://www.tiktok.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="TikTok">
+
+                            <i class="bi bi-tiktok"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Secciones -->
+
+                <div class="col-6 col-md-3">
+
+                    <h3 class="footer-titulo">
+                        SECCIONES
+                    </h3>
+
+                    <ul class="footer-enlaces">
+
+                        <li><a href="actualidad.html">Actualidad</a></li>
+                        <li><a href="politica.html">Política</a></li>
+                        <li><a href="sociedad.html">Sociedad</a></li>
+                        <li><a href="deportes.html">Deportes</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="turismo.html">Turismo</a></li>
+                        <li><a href="economia.html">Economía</a></li>
+                        <li><a href="tecnologia.html">Tecnología</a></li>
+
+                    </ul>
+
+                </div>
+
+                
+
+
+
+                <!-- Información -->
+
+                <div class="col-6 col-md-4">
+
+                    <h3 class="footer-titulo">
+                        PUNTO PISCO
+                    </h3>
+
+                    <ul class="footer-enlaces">
 
                         <li>
-                            <a class="dropdown-item"
-                               href="quienes-somos.html">
+                            <a href="quienes-somos.html">
                                 Quiénes somos
                             </a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item"
-                               href="contacto.html">
+                            <a href="contacto.html">
                                 Contacto
                             </a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item"
-                               href="privacidad.html">
+                            <a href="privacidad.html">
                                 Política de privacidad
                             </a>
                         </li>
 
                     </ul>
-                </li>
 
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- FIN DEL MENÚ -->
+                </div>
 
 
-    <!-- CARRUSEL -->
-    <div id="carouselExampleCaptions" class="carousel slide carrusel-punto">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/inicio/carrusel1.jpg" class="d-block w-100" alt="imagen 1 del carrusel">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Pisco, historia que permanece</h5>
-        <p>La Plaza de Armas, uno de los espacios que forma parte de la historia e identidad de nuestra ciudad.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/inicio/carrusel2.jpg" class="d-block w-100" alt="imagen 2 del carrusel">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>El malecón, frente al Pacífico</h5>
-        <p>Un espacio para disfrutar del paisaje, la brisa marina y la vida cotidiana de Pisco.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/inicio/carrusel3.jpg" class="d-block w-100" alt="imagen 3 del carrusel">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Pisco, entre el mar y su gente</h5>
-        <p>Playas, paisajes y personas que forman parte de la identidad de nuestra provincia.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    <!-- CARRUSEL -->
-
-    <!-- NOTICIA PRINCIPAL -->
-    <section class="container noticia-principal my-5">
-
-        <div class="row align-items-center g-4">
-
-            <!-- Imagen de la noticia -->
-            <div class="col-12 col-md-5">
-                <img
-                    src="img/noticia-principal.jpg"
-                    alt="Imagen de la noticia destacada"
-                    class="img-fluid noticia-imagen"
-                >
             </div>
 
-            <!-- Información de la noticia -->
-            <div class="col-12 col-md-7">
 
-                <div class="d-flex align-items-center gap-2 mb-3">
-                    <span class="etiqueta-categoria">
-                        PISCO
-                    </span>
 
-                    <span class="texto-seccion">
-                        ACTUALIDAD
-                    </span>
-                </div>
+            <!-- Derechos de autor -->
 
-                <h2 class="titulo-principal">
-                    Abogados advierten errores en la autógrafa de la ley que delega facultades al Ejecutivo
-                </h2>
+            <div class="footer-inferior">
 
-                <div class="datos-noticia">
-                    <span>
-                        <i class="bi bi-calendar3"></i>
-                        23 de octubre de 2026
-                    </span>
-
-                    <span>
-                        <i class="bi bi-person"></i>
-                        Redacción Punto Pisco
-                    </span>
-                </div>
-
-                <p class="resumen-principal">
-                    El exoficial mayor del Congreso César Delgado-Guembes y el abogado Natale Amprimo cuestionaron que la autógrafa de la Ley 32743 atribuya al Senado la aprobación de la norma. Ambos señalaron que corresponde al Congreso en su conjunto y plantearon observaciones sobre la titularidad bajo la cual debe remitirse al Ejecutivo.
+                <p>
+                    © 2026 Punto Pisco.
+                    Todos los derechos reservados.
                 </p>
 
-                <a href="#" class="enlace-noticia">
-                    Leer noticia completa
-                    <i class="bi bi-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- FIN DE LA NOTICIA PRINCIPAL -->
-
-    
-<!-- CATEGORIA PISCO -->
-<section class="container seccion-categoria my-5" id="seccion-pisco">
-
-    <div class="encabezado-categoria">
-        <div>
-            <h2>PISCO</h2>
-            <p>Noticias de nuestra provincia</p>
-        </div>
-
-        <a href="pisco.html" class="boton-ver-mas">
-            Ver más <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Noticia 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco1.jpg"
-                    alt="Plaza de Armas de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">PISCO</span>
-
-                    <h3>
-                        Pisco: conoce la historia de su Plaza de Armas
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 2 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco/noticia-pisco-1.jpg"
-                    alt="Malecón de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">SEGURIDAD CIUDADANA</span>
-
-                    <h3>
-                        Enfrentamiento policial en Pisco deja cuatro detenidos durante operativo por presunto secuestro
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 3 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco3.jpg"
-                    alt="Paisaje de la provincia de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">ACTUALIDAD</span>
-
-                    <h3>
-                        Los paisajes que destacan en la provincia de Pisco
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-</section>
-<!-- FIN CATEGORIA PISCO -->
-
-<!-- CATEGORIA ICA -->
-<section class="container seccion-categoria my-5" id="seccion-pisco">
-
-    <div class="encabezado-categoria">
-        <div>
-            <h2>ICA</h2>
-            <p>Noticias de nuestro departamento</p>
-        </div>
-
-        <a href="pisco.html" class="boton-ver-mas">
-            Ver más <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Noticia 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco1.jpg"
-                    alt="Plaza de Armas de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">PISCO</span>
-
-                    <h3>
-                        Pisco: conoce la historia de su Plaza de Armas
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 2 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco2.jpg"
-                    alt="Malecón de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">TURISMO</span>
-
-                    <h3>
-                        El malecón de Pisco y sus atractivos turísticos
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 3 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco3.jpg"
-                    alt="Paisaje de la provincia de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">ACTUALIDAD</span>
-
-                    <h3>
-                        Los paisajes que destacan en la provincia de Pisco
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-</section>
-<!-- FIN CATEGORIA ICA -->
-
-<!-- CATEGORIA PERÚ -->
-<section class="container seccion-categoria my-5" id="seccion-pisco">
-
-    <div class="encabezado-categoria">
-        <div>
-            <h2>PERÚ</h2>
-            <p>Noticias de nuestro pais</p>
-        </div>
-
-        <a href="pisco.html" class="boton-ver-mas">
-            Ver más <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Noticia 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco1.jpg"
-                    alt="Plaza de Armas de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">PISCO</span>
-
-                    <h3>
-                        Pisco: conoce la historia de su Plaza de Armas
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 2 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco2.jpg"
-                    alt="Malecón de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">TURISMO</span>
-
-                    <h3>
-                        El malecón de Pisco y sus atractivos turísticos
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 3 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco3.jpg"
-                    alt="Paisaje de la provincia de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">ACTUALIDAD</span>
-
-                    <h3>
-                        Los paisajes que destacan en la provincia de Pisco
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-</section>
-<!-- FIN CATEGORIA PERÚ -->
-
-<!-- CATEGORIA DEPORTES -->
-<section class="container seccion-categoria my-5" id="seccion-pisco">
-
-    <div class="encabezado-categoria">
-        <div>
-            <h2>DEPORTES</h2>
-            <p>Noticias sobre deportes</p>
-        </div>
-
-        <a href="pisco.html" class="boton-ver-mas">
-            Ver más <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Noticia 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco1.jpg"
-                    alt="Plaza de Armas de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">PISCO</span>
-
-                    <h3>
-                        Pisco: conoce la historia de su Plaza de Armas
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 2 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco2.jpg"
-                    alt="Malecón de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">TURISMO</span>
-
-                    <h3>
-                        El malecón de Pisco y sus atractivos turísticos
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 3 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco3.jpg"
-                    alt="Paisaje de la provincia de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">ACTUALIDAD</span>
-
-                    <h3>
-                        Los paisajes que destacan en la provincia de Pisco
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-</section>
-<!-- FIN CATEGORIA DEPORTES -->
-
-<!-- CATEGORIA TECNOLOGIA -->
-<section class="container seccion-categoria my-5" id="seccion-pisco">
-
-    <div class="encabezado-categoria">
-        <div>
-            <h2>TECNOLOGIA</h2>
-            <p>Noticias sobre tecnologia</p>
-        </div>
-
-        <a href="pisco.html" class="boton-ver-mas">
-            Ver más <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Noticia 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco1.jpg"
-                    alt="Plaza de Armas de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">PISCO</span>
-
-                    <h3>
-                        Pisco: conoce la historia de su Plaza de Armas
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 2 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco2.jpg"
-                    alt="Malecón de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">TURISMO</span>
-
-                    <h3>
-                        El malecón de Pisco y sus atractivos turísticos
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 3 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco3.jpg"
-                    alt="Paisaje de la provincia de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">ACTUALIDAD</span>
-
-                    <h3>
-                        Los paisajes que destacan en la provincia de Pisco
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-</section>
-<!-- FIN CATEGORIA TECNOLOGIA -->
-
-<!-- CATEGORIA CULTURA -->
-<section class="container seccion-categoria my-5" id="seccion-pisco">
-
-    <div class="encabezado-categoria">
-        <div>
-            <h2>CULTURA</h2>
-            <p>Noticias sobre cultura</p>
-        </div>
-
-        <a href="pisco.html" class="boton-ver-mas">
-            Ver más <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Noticia 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco1.jpg"
-                    alt="Plaza de Armas de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">PISCO</span>
-
-                    <h3>
-                        Pisco: conoce la historia de su Plaza de Armas
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 2 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco2.jpg"
-                    alt="Malecón de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">TURISMO</span>
-
-                    <h3>
-                        El malecón de Pisco y sus atractivos turísticos
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-        <!-- Noticia 3 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <article class="tarjeta-noticia">
-                <img
-                    src="img/pisco3.jpg"
-                    alt="Paisaje de la provincia de Pisco"
-                    class="imagen-tarjeta"
-                >
-
-                <div class="contenido-tarjeta">
-                    <span class="categoria-tarjeta">ACTUALIDAD</span>
-
-                    <h3>
-                        Los paisajes que destacan en la provincia de Pisco
-                    </h3>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-</section>
-<!-- FIN CATEGORIA CULTURA -->
-
-
-
-<!-- PIE DE PAGINA -->
-<footer class="pie-pagina">
-
-    <div class="container">
-
-        <div class="row g-4">
-
-            <!-- Identidad del periódico -->
-            <div class="col-12 col-md-5">
-                <h2 class="footer-logo">PUNTO PISCO</h2>
-
-                <p class="footer-descripcion">
-                    La información de nuestra tierra,
-                    en un solo lugar.
+                <p class="footer-creador">
+                    Un proyecto creado por Jesús Mejía.
                 </p>
 
-                <!-- Redes sociales -->
-                <div class="footer-redes">
-                    <a href="https://www.facebook.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-
-                    <a href="https://www.tiktok.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="TikTok">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                </div>
             </div>
 
-            <!-- Secciones -->
-            <div class="col-6 col-md-3">
-                <h3 class="footer-titulo">SECCIONES</h3>
-
-                <ul class="footer-enlaces">
-                    <li><a href="pisco.html">Pisco</a></li>
-                    <li><a href="ica.html">Ica</a></li>
-                    <li><a href="peru.html">Perú</a></li>
-                    <li><a href="deportes.html">Deportes</a></li>
-                    <li><a href="tecnologia.html">Tecnología</a></li>
-                    <li><a href="cultura.html">Cultura</a></li>
-                </ul>
-            </div>
-
-            <!-- Información -->
-            <div class="col-6 col-md-4">
-                <h3 class="footer-titulo">PUNTO PISCO</h3>
-
-                <ul class="footer-enlaces">
-                    <li>
-                        <a href="quienes-somos.html">
-                            Quiénes somos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="privacidad.html">
-                            Política de privacidad
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
         </div>
 
-        
-        <!-- Derechos de autor -->
-        <div class="footer-inferior">
-            <p>
-                © 2026 Punto Pisco.
-                Todos los derechos reservados.
-            </p>
-
-            <p class="footer-creador">
-                Un proyecto creado por Jesús Mejía.
-            </p>
-        </div>
-
-
-    </div>
-
-</footer>
-<!-- FIN DEL PIE DE PAGINA -->
-
+    </footer>
 
 
     <!-- JavaScript de Bootstrap -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

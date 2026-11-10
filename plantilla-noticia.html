@@ -72,105 +72,101 @@
 
 
     <!-- MENÚ PRINCIPAL -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu-punto"
-        aria-label="Menú principal">
+        <nav class="navbar navbar-expand-lg navbar-dark menu-punto">
+    <div class="container">
 
-        <div class="container">
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPuntoPisco"
+            aria-controls="menuPuntoPisco"
+            aria-expanded="false"
+            aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Botón hamburguesa -->
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPuntoPisco"
-                aria-controls="menuPuntoPisco"
-                aria-expanded="false"
-                aria-label="Abrir menú">
+        <div class="collapse navbar-collapse" id="menuPuntoPisco">
 
-                <span class="navbar-toggler-icon"></span>
+            <ul class="navbar-nav me-auto">
 
-            </button>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
 
-            <div class="collapse navbar-collapse" id="menuPuntoPisco">
+                <li class="nav-item">
+                    <a class="nav-link" href="actualidad.html">ACTUALIDAD</a>
+                </li>
 
-                <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="politica.html">POLÍTICA</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">INICIO</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sociedad.html">SOCIEDAD</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../pisco.html">PISCO</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deportes.html">DEPORTES</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../ica.html">ICA</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cultura.html">CULTURA</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../peru.html">PERÚ</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="turismo.html">TURISMO</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../deportes.html">DEPORTES</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="economia.html">ECONOMÍA</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../tecnologia.html">TECNOLOGÍA</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tecnologia.html">TECNOLOGÍA</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../cultura.html">CULTURA</a>
-                    </li>
+                <!-- Información institucional -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="menuInformacion"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        INFORMACIÓN
+                    </a>
 
-                    <!-- Información institucional -->
-                    <li class="nav-item dropdown">
+                    <ul class="dropdown-menu"
+                        aria-labelledby="menuInformacion">
 
-                        <a class="nav-link dropdown-toggle"
-                            href="#"
-                            id="menuInformacion"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <li>
+                            <a class="dropdown-item"
+                               href="quienes-somos.html">
+                                Quiénes somos
+                            </a>
+                        </li>
 
-                            INFORMACIÓN
+                        <li>
+                            <a class="dropdown-item"
+                               href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
 
-                        </a>
+                        <li>
+                            <a class="dropdown-item"
+                               href="privacidad.html">
+                                Política de privacidad
+                            </a>
+                        </li>
 
-                        <ul class="dropdown-menu"
-                            aria-labelledby="menuInformacion">
+                    </ul>
+                </li>
 
-                            <li>
-                                <a class="dropdown-item"
-                                    href="../../quienes-somos.html">
-                                    Quiénes somos
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item"
-                                    href="../../contacto.html">
-                                    Contacto
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item"
-                                    href="../../privacidad.html">
-                                    Política de privacidad
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
+            </ul>
         </div>
-
-    </nav>
+    </div>
+        </nav>
     <!-- FIN DEL MENÚ -->
 
 
@@ -452,6 +448,7 @@
 
 
     <!-- PIE DE PÁGINA -->
+
     <footer class="pie-pagina">
 
         <div class="container">
@@ -459,7 +456,8 @@
             <div class="row g-4">
 
 
-                <!-- IDENTIDAD DEL PROYECTO -->
+                <!-- Identidad del periódico -->
+
                 <div class="col-12 col-md-5">
 
                     <h2 class="footer-logo">
@@ -473,6 +471,7 @@
 
 
                     <!-- Redes sociales -->
+
                     <div class="footer-redes">
 
                         <a href="https://www.facebook.com/"
@@ -507,7 +506,9 @@
                 </div>
 
 
-                <!-- SECCIONES -->
+
+                <!-- Secciones -->
+
                 <div class="col-6 col-md-3">
 
                     <h3 class="footer-titulo">
@@ -516,19 +517,25 @@
 
                     <ul class="footer-enlaces">
 
-                        <li><a href="../../pisco.html">Pisco</a></li>
-                        <li><a href="../../ica.html">Ica</a></li>
-                        <li><a href="../../peru.html">Perú</a></li>
-                        <li><a href="../../deportes.html">Deportes</a></li>
-                        <li><a href="../../tecnologia.html">Tecnología</a></li>
-                        <li><a href="../../cultura.html">Cultura</a></li>
+                        <li><a href="actualidad.html">Actualidad</a></li>
+                        <li><a href="politica.html">Política</a></li>
+                        <li><a href="sociedad.html">Sociedad</a></li>
+                        <li><a href="deportes.html">Deportes</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="turismo.html">Turismo</a></li>
+                        <li><a href="economia.html">Economía</a></li>
+                        <li><a href="tecnologia.html">Tecnología</a></li>
 
                     </ul>
 
                 </div>
 
+                
 
-                <!-- INFORMACIÓN INSTITUCIONAL -->
+
+
+                <!-- Información -->
+
                 <div class="col-6 col-md-4">
 
                     <h3 class="footer-titulo">
@@ -538,19 +545,19 @@
                     <ul class="footer-enlaces">
 
                         <li>
-                            <a href="../../quienes-somos.html">
+                            <a href="quienes-somos.html">
                                 Quiénes somos
                             </a>
                         </li>
 
                         <li>
-                            <a href="../../contacto.html">
+                            <a href="contacto.html">
                                 Contacto
                             </a>
                         </li>
 
                         <li>
-                            <a href="../../privacidad.html">
+                            <a href="privacidad.html">
                                 Política de privacidad
                             </a>
                         </li>
@@ -559,10 +566,13 @@
 
                 </div>
 
+
             </div>
 
 
-            <!-- DERECHOS DE AUTOR -->
+
+            <!-- Derechos de autor -->
+
             <div class="footer-inferior">
 
                 <p>
@@ -576,10 +586,10 @@
 
             </div>
 
+
         </div>
 
     </footer>
-    <!-- FIN DEL PIE DE PÁGINA -->
 
 
     <!-- COMPARTIR AUTOMÁTICAMENTE LA URL DE LA NOTICIA -->

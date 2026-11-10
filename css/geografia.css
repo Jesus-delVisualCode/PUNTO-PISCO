@@ -1,0 +1,676 @@
+/* =====================================================
+   PUNTO PISCO - PÁGINAS GEOGRÁFICAS
+   Archivo compartido: Pisco, Ica y Perú
+===================================================== */
+
+
+/* =====================================================
+   BANNER GEOGRÁFICO
+===================================================== */
+
+.banner-geografico {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-morado);
+}
+
+.imagen-banner-geografico {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   CONTENEDOR GENERAL
+===================================================== */
+
+.pagina-geografica {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-fondo);
+}
+
+.contenido-geografico {
+    width: 100%;
+    max-width: none;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.contenido-noticias-geograficas {
+    min-width: 0;
+}
+
+
+/* =====================================================
+   INTRODUCCIÓN GEOGRÁFICA
+===================================================== */
+
+.introduccion-geografica {
+    margin-bottom: 35px;
+}
+
+.etiqueta-geografica {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    margin-bottom: 15px;
+
+    background-color: #eee7f7;
+    color: var(--color-morado);
+
+    border-radius: 4px;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.encabezado-geografico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.encabezado-geografico h2 {
+    margin: 0 0 10px;
+
+    color: var(--color-morado);
+
+    font-family: var(--fuente-titulos);
+    font-size: clamp(27px, 3vw, 38px);
+    font-weight: 700;
+}
+
+.encabezado-geografico p {
+    max-width: 700px;
+    margin: 0;
+
+    color: #666;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.icono-geografico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+
+    background-color: var(--color-morado);
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 28px;
+}
+
+.linea-geografica {
+    width: 100%;
+    height: 3px;
+    margin-top: 25px;
+
+    background: linear-gradient(
+        to right,
+        var(--color-morado) 0%,
+        var(--color-morado-medio) 35%,
+        #e5e5e5 35%,
+        #e5e5e5 100%
+    );
+}
+
+
+/* =====================================================
+   ENCABEZADOS DE SECCIÓN
+===================================================== */
+
+.titulo-seccion-geografica {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #dedede;
+}
+
+.titulo-seccion-geografica span {
+    display: block;
+    margin-bottom: 5px;
+
+    color: var(--color-morado-medio);
+
+    font-family: var(--fuente-interfaz);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.titulo-seccion-geografica h2 {
+    margin: 0;
+
+    color: #222;
+
+    font-family: var(--fuente-titulos);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.titulo-seccion-geografica > i {
+    color: var(--color-morado);
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   NOTICIA PRINCIPAL
+===================================================== */
+
+.noticia-destacada-geografica {
+    margin-bottom: 45px;
+}
+
+.tarjeta-principal-geografica {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+
+    overflow: hidden;
+
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition: box-shadow 0.25s ease;
+}
+
+.tarjeta-principal-geografica:hover {
+    box-shadow: 0 8px 24px rgba(36, 17, 63, 0.10);
+}
+
+.imagen-principal-geografica {
+    display: block;
+    min-height: 330px;
+    overflow: hidden;
+}
+
+.imagen-principal-geografica img {
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.imagen-principal-geografica:hover img {
+    transform: scale(1.04);
+}
+
+.informacion-principal-geografica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 28px;
+}
+
+.metadatos-geograficos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 13px;
+
+    color: #777;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.metadatos-geograficos > span:not(.categoria-geografica) {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.categoria-geografica {
+    padding: 5px 9px;
+
+    background-color: #eee7f7;
+    color: var(--color-morado);
+
+    border-radius: 3px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.informacion-principal-geografica h3 {
+    margin: 0 0 13px;
+
+    font-family: var(--fuente-titulos);
+    font-size: clamp(20px, 2vw, 26px);
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.informacion-principal-geografica h3 a {
+    color: #222;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.informacion-principal-geografica h3 a:hover {
+    color: var(--color-morado-medio);
+}
+
+.informacion-principal-geografica > p {
+    margin: 0 0 18px;
+
+    color: #666;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.datos-geograficos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-top: auto;
+    margin-bottom: 20px;
+
+    color: #888;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 11px;
+}
+
+.datos-geograficos span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.enlace-principal-geografico {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--color-morado);
+
+    font-family: var(--fuente-interfaz);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: gap 0.2s ease;
+}
+
+.enlace-principal-geografico:hover {
+    gap: 14px;
+    color: var(--color-morado-medio);
+}
+
+
+/* =====================================================
+   LISTADO DE NOTICIAS RECIENTES
+===================================================== */
+
+.noticias-recientes-geograficas {
+    margin-bottom: 20px;
+}
+
+.lista-geografica {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tarjeta-noticia-geografica {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 22px;
+
+    padding: 15px;
+
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 7px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.tarjeta-noticia-geografica:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 17px rgba(36, 17, 63, 0.08);
+}
+
+.imagen-noticia-geografica {
+    display: block;
+    height: 170px;
+
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagen-noticia-geografica img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.imagen-noticia-geografica:hover img {
+    transform: scale(1.05);
+}
+
+.contenido-noticia-geografica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 0;
+    padding: 5px 0;
+}
+
+.contenido-noticia-geografica h3 {
+    margin: 0 0 9px;
+
+    font-family: var(--fuente-titulos);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.contenido-noticia-geografica h3 a {
+    color: #252525;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.contenido-noticia-geografica h3 a:hover {
+    color: var(--color-morado-medio);
+}
+
+.contenido-noticia-geografica p {
+    margin: 0 0 12px;
+
+    color: #707070;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.enlace-noticia-geografica {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: auto;
+
+    color: var(--color-morado);
+
+    font-family: var(--fuente-interfaz);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: gap 0.2s ease;
+}
+
+.enlace-noticia-geografica:hover {
+    gap: 12px;
+    color: var(--color-morado-medio);
+}
+
+
+/* =====================================================
+   PUBLICIDAD LATERAL STICKY
+===================================================== */
+
+.columna-publicidad-geografica {
+    align-self: stretch;
+    min-width: 0;
+
+    padding-right: 0;
+}
+
+.publicidad-geografica-sticky {
+    position: sticky;
+    top: 20px;
+
+    width: 100%;
+    padding: 8px;
+
+    background-color: white;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.etiqueta-publicidad-geografica {
+    margin-bottom: 8px;
+
+    color: #999;
+
+    font-family: var(--fuente-interfaz);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.publicidad-geografica-sticky a {
+    display: block;
+    overflow: hidden;
+}
+
+.publicidad-geografica-sticky img {
+    display: block;
+
+    width: 100%;
+    max-height: 600px;
+
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLETS
+===================================================== */
+
+@media (max-width: 991.98px) {
+
+    .columna-publicidad-geografica {
+        display: none;
+    }
+
+    .contenido-noticias-geograficas {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MÓVILES
+===================================================== */
+
+@media (max-width: 767.98px) {
+
+    .contenido-geografico {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+
+    .introduccion-geografica {
+        margin-bottom: 28px;
+    }
+
+    .icono-geografico {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .encabezado-geografico p {
+        font-size: 13px;
+    }
+
+    .titulo-seccion-geografica h2 {
+        font-size: 20px;
+    }
+
+    .tarjeta-principal-geografica {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-principal-geografica {
+        min-height: 230px;
+        height: 230px;
+    }
+
+    .imagen-principal-geografica img {
+        min-height: 230px;
+    }
+
+    .informacion-principal-geografica {
+        padding: 20px;
+    }
+
+    .informacion-principal-geografica h3 {
+        font-size: 21px;
+    }
+
+    .tarjeta-noticia-geografica {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 15px;
+
+        padding: 12px;
+    }
+
+    .imagen-noticia-geografica {
+        height: 145px;
+    }
+
+    .contenido-noticia-geografica h3 {
+        font-size: 16px;
+    }
+
+    .contenido-noticia-geografica p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MÓVILES PEQUEÑOS
+===================================================== */
+
+@media (max-width: 575.98px) {
+
+    .encabezado-geografico {
+        gap: 10px;
+    }
+
+    .encabezado-geografico h2 {
+        font-size: 26px;
+    }
+
+    .icono-geografico {
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+    }
+
+    .titulo-seccion-geografica h2 {
+        font-size: 18px;
+    }
+
+    .tarjeta-noticia-geografica {
+        grid-template-columns: 115px minmax(0, 1fr);
+        gap: 12px;
+
+        padding: 10px;
+    }
+
+    .imagen-noticia-geografica {
+        height: 115px;
+    }
+
+    .contenido-noticia-geografica {
+        padding: 0;
+    }
+
+    .contenido-noticia-geografica .metadatos-geograficos {
+        gap: 6px;
+        margin-bottom: 7px;
+
+        font-size: 9px;
+    }
+
+    .categoria-geografica {
+        padding: 4px 6px;
+        font-size: 9px;
+    }
+
+    .contenido-noticia-geografica h3 {
+        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .contenido-noticia-geografica p {
+        display: none;
+    }
+
+    .enlace-noticia-geografica {
+        font-size: 11px;
+    }
+
+    .informacion-principal-geografica {
+        padding: 17px;
+    }
+
+    .informacion-principal-geografica > p {
+        font-size: 13px;
+    }
+
+    .datos-geograficos {
+        gap: 8px;
+        font-size: 10px;
+    }
+
+}

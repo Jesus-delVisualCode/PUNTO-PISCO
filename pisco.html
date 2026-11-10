@@ -4,370 +4,711 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Punto Pisco</title>
 
-     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Noticias de Pisco | Punto Pisco</title>
 
-    <!-- Bootstrap iconos -->
+    <meta name="description"
+        content="Las noticias más recientes de Pisco. Información local sobre actualidad, política, sociedad, deportes, cultura y más.">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <!-- tipos de letra -->
+    <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 
-     <!-- estilos de punto pisco -->    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos de Punto Pisco -->
     <link rel="stylesheet" href="css/esencial.css">
-    <link rel="stylesheet" href="css/pisco.css">
-    
+    <link rel="stylesheet" href="css/geografia.css">
 
 </head>
 
 <body>
 
-    
-<!-- CABECERA -->
-<header class="cabecera-punto">
-    <a href="index.html" class="logo-enlace" aria-label="Ir al inicio">
-        <img src="img/logo.png" alt="Logo de Punto Pisco">
-    </a>
+    <!-- CABECERA -->
 
-    <h1>PUNTO PISCO</h1>
+    <header class="cabecera-punto">
 
-    <!-- Redes sociales -->
-    <div class="cabecera-redes">
-        <a href="https://www.facebook.com/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Facebook">
-            <i class="bi bi-facebook"></i>
+        <a href="index.html" class="logo-enlace" aria-label="Ir al inicio">
+            <img src="img/logo.png" alt="Logo de Punto Pisco">
         </a>
 
-        <a href="https://www.instagram.com/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-        </a>
+        <h1>PUNTO PISCO</h1>
 
-        <a href="https://www.tiktok.com/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="TikTok">
-            <i class="bi bi-tiktok"></i>
-        </a>
-    </div>
-</header>
+        <div class="cabecera-redes">
 
-<!-- MENÚ PRINCIPAL -->
-<nav class="navbar navbar-expand-lg navbar-dark menu-punto">
-    <div class="container">
+            <a href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
 
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPuntoPisco"
-            aria-controls="menuPuntoPisco"
-            aria-expanded="false"
-            aria-label="Abrir menú">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <a href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
 
-        <div class="collapse navbar-collapse" id="menuPuntoPisco">
+            <a href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+            </a>
 
-            <ul class="navbar-nav mx-auto">
+        </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">INICIO</a>
-                </li>
+    </header>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pisco.html">PISCO</a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="ica.html">ICA</a>
-                </li>
+    <!-- MENÚ PRINCIPAL -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="peru.html">PERÚ</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-dark menu-punto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="deportes.html">DEPORTES</a>
-                </li>
+        <div class="container">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="tecnologia.html">TECNOLOGÍA</a>
-                </li>
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPuntoPisco"
+                aria-controls="menuPuntoPisco"
+                aria-expanded="false"
+                aria-label="Abrir menú">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="cultura.html">CULTURA</a>
-                </li>
+                <span class="navbar-toggler-icon"></span>
 
-                <!-- Información institucional -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       id="menuInformacion"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        INFORMACIÓN
-                    </a>
+            </button>
 
-                    <ul class="dropdown-menu"
-                        aria-labelledby="menuInformacion">
+            <div class="collapse navbar-collapse" id="menuPuntoPisco">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="actualidad.html">ACTUALIDAD</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica.html">POLÍTICA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sociedad.html">SOCIEDAD</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="deportes.html">DEPORTES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cultura.html">CULTURA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="turismo.html">TURISMO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="economia.html">ECONOMÍA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tecnologia.html">TECNOLOGÍA</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            id="menuInformacion"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            INFORMACIÓN
+
+                        </a>
+
+                        <ul class="dropdown-menu"
+                            aria-labelledby="menuInformacion">
+
+                            <li>
+                                <a class="dropdown-item" href="quienes-somos.html">
+                                    Quiénes somos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="privacidad.html">
+                                    Política de privacidad
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- BANNER GEOGRÁFICO -->
+
+    <section class="banner-geografico">
+
+        <img src="img/geografia/banner-pisco.png"
+            alt="Noticias de Pisco"
+            class="imagen-banner-geografico">
+
+    </section>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="pagina-geografica">
+
+        <div class="container-fluid contenido-geografico px-3 px-xl-4">
+
+            <div class="row g-4">
+
+                <!-- COLUMNA EDITORIAL -->
+
+                <div class="col-12 col-lg-10 contenido-noticias-geograficas">
+
+                    <!-- PRESENTACIÓN DE LA LOCALIDAD -->
+
+                    <section class="introduccion-geografica">
+
+                        <div class="etiqueta-geografica">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            INFORMACIÓN LOCAL
+                        </div>
+
+                        <div class="encabezado-geografico">
+
+                            <div>
+                                <h2>Noticias de Pisco</h2>
+
+                                <p>
+                                    Mantente informado sobre los acontecimientos,
+                                    actividades y noticias más importantes de nuestra provincia.
+                                </p>
+                            </div>
+
+                            <span class="icono-geografico">
+                                <i class="bi bi-buildings"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="linea-geografica"></div>
+
+                    </section>
+
+
+                    <!-- NOTICIA PRINCIPAL DE PISCO -->
+
+                    <section class="noticia-destacada-geografica">
+
+                        <div class="titulo-seccion-geografica">
+
+                            <div>
+                                <span>LO MÁS IMPORTANTE</span>
+                                <h2>En portada</h2>
+                            </div>
+
+                            <i class="bi bi-newspaper"></i>
+
+                        </div>
+
+
+                        <article class="tarjeta-principal-geografica">
+
+                            <a href="noticias/actualidad/noticia-1.html"
+                                class="imagen-principal-geografica">
+
+                                <img src="img/inicio/noticia-principal.jpg"
+                                    alt="Noticia principal de Pisco">
+
+                            </a>
+
+
+                            <div class="informacion-principal-geografica">
+
+                                <div class="metadatos-geograficos">
+
+                                    <span class="categoria-geografica">
+                                        ACTUALIDAD
+                                    </span>
+
+                                    <span>
+                                        <i class="bi bi-geo-alt"></i>
+                                        PISCO
+                                    </span>
+
+                                </div>
+
+                                <h3>
+                                    <a href="noticias/actualidad/noticia-1.html">
+                                        Título de la noticia más importante de Pisco
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    Aquí se mostrará una descripción amplia de la noticia,
+                                    con los detalles más importantes del acontecimiento.
+                                    Este espacio permitirá que el lector conozca el contexto
+                                    antes de ingresar a la publicación completa.
+                                </p>
+
+                                <div class="datos-geograficos">
+
+                                    <span>
+                                        <i class="bi bi-calendar3"></i>
+                                        09 NOV 2026
+                                    </span>
+
+                                    <span>
+                                        <i class="bi bi-person"></i>
+                                        Redacción Punto Pisco
+                                    </span>
+
+                                </div>
+
+                                <a href="noticias/actualidad/noticia-1.html"
+                                    class="enlace-principal-geografico">
+
+                                    Leer noticia completa
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </section>
+
+
+                    <!-- NOTICIAS RECIENTES -->
+
+                    <section class="noticias-recientes-geograficas">
+
+                        <div class="titulo-seccion-geografica">
+
+                            <div>
+                                <span>ACTUALIDAD PROVINCIAL</span>
+                                <h2>Últimas noticias de Pisco</h2>
+                            </div>
+
+                            <i class="bi bi-clock-history"></i>
+
+                        </div>
+
+
+                        <div class="lista-geografica">
+
+
+                            <!-- NOTICIA 1 -->
+
+                            <article class="tarjeta-noticia-geografica">
+
+                                <a href="noticias/sociedad/noticia-1.html"
+                                    class="imagen-noticia-geografica">
+
+                                    <img src="img/inicio/reciente-1.jpg"
+                                        alt="Noticia reciente de Pisco">
+
+                                </a>
+
+                                <div class="contenido-noticia-geografica">
+
+                                    <div class="metadatos-geograficos">
+
+                                        <span class="categoria-geografica">
+                                            SOCIEDAD
+                                        </span>
+
+                                        <span>09 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/sociedad/noticia-1.html">
+                                            Título de una noticia reciente de la provincia
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Breve resumen del acontecimiento, con información
+                                        relevante para los habitantes de Pisco.
+                                    </p>
+
+                                    <a href="noticias/sociedad/noticia-1.html"
+                                        class="enlace-noticia-geografica">
+
+                                        Leer noticia
+                                        <i class="bi bi-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- NOTICIA 2 -->
+
+                            <article class="tarjeta-noticia-geografica">
+
+                                <a href="noticias/politica/noticia-1.html"
+                                    class="imagen-noticia-geografica">
+
+                                    <img src="img/inicio/reciente-2.jpg"
+                                        alt="Noticia política de Pisco">
+
+                                </a>
+
+                                <div class="contenido-noticia-geografica">
+
+                                    <div class="metadatos-geograficos">
+
+                                        <span class="categoria-geografica">
+                                            POLÍTICA
+                                        </span>
+
+                                        <span>08 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/politica/noticia-1.html">
+                                            Título de una noticia política de Pisco
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Resumen del acontecimiento político y sus posibles
+                                        implicancias para la provincia.
+                                    </p>
+
+                                    <a href="noticias/politica/noticia-1.html"
+                                        class="enlace-noticia-geografica">
+
+                                        Leer noticia
+                                        <i class="bi bi-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- NOTICIA 3 -->
+
+                            <article class="tarjeta-noticia-geografica">
+
+                                <a href="noticias/deportes/noticia-1.html"
+                                    class="imagen-noticia-geografica">
+
+                                    <img src="img/inicio/reciente-3.jpg"
+                                        alt="Noticia deportiva de Pisco">
+
+                                </a>
+
+                                <div class="contenido-noticia-geografica">
+
+                                    <div class="metadatos-geograficos">
+
+                                        <span class="categoria-geografica">
+                                            DEPORTES
+                                        </span>
+
+                                        <span>07 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/deportes/noticia-1.html">
+                                            Título de una noticia deportiva de Pisco
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Información sobre actividades, competencias
+                                        y acontecimientos deportivos locales.
+                                    </p>
+
+                                    <a href="noticias/deportes/noticia-1.html"
+                                        class="enlace-noticia-geografica">
+
+                                        Leer noticia
+                                        <i class="bi bi-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- NOTICIA 4 -->
+
+                            <article class="tarjeta-noticia-geografica">
+
+                                <a href="noticias/turismo/noticia-1.html"
+                                    class="imagen-noticia-geografica">
+
+                                    <img src="img/inicio/reciente-4.jpg"
+                                        alt="Noticia turística de Pisco">
+
+                                </a>
+
+                                <div class="contenido-noticia-geografica">
+
+                                    <div class="metadatos-geograficos">
+
+                                        <span class="categoria-geografica">
+                                            TURISMO
+                                        </span>
+
+                                        <span>06 NOV 2026</span>
+
+                                    </div>
+
+                                    <h3>
+                                        <a href="noticias/turismo/noticia-1.html">
+                                            Título de una noticia relacionada con el turismo local
+                                        </a>
+                                    </h3>
+
+                                    <p>
+                                        Información sobre los atractivos, actividades
+                                        y novedades del sector turístico de Pisco.
+                                    </p>
+
+                                    <a href="noticias/turismo/noticia-1.html"
+                                        class="enlace-noticia-geografica">
+
+                                        Leer noticia
+                                        <i class="bi bi-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- COLUMNA PUBLICITARIA -->
+
+                <aside class="col-lg-2 columna-publicidad-geografica">
+
+                    <div class="publicidad-geografica-sticky">
+
+                        <div class="etiqueta-publicidad-geografica">
+                            PUBLICIDAD
+                        </div>
+
+                        <a href="#"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <img src="img/publicidad/publicidad-vertical.jpg"
+                                alt="Espacio publicitario de Punto Pisco">
+
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="pie-pagina">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- Identidad del periódico -->
+
+                <div class="col-12 col-md-5">
+
+                    <h2 class="footer-logo">
+                        PUNTO PISCO
+                    </h2>
+
+                    <p class="footer-descripcion">
+                        La información de nuestra tierra,
+                        en un solo lugar.
+                    </p>
+
+
+                    <!-- Redes sociales -->
+
+                    <div class="footer-redes">
+
+                        <a href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="https://www.tiktok.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="TikTok">
+
+                            <i class="bi bi-tiktok"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Secciones -->
+
+                <div class="col-6 col-md-3">
+
+                    <h3 class="footer-titulo">
+                        SECCIONES
+                    </h3>
+
+                    <ul class="footer-enlaces">
+
+                        <li><a href="actualidad.html">Actualidad</a></li>
+                        <li><a href="politica.html">Política</a></li>
+                        <li><a href="sociedad.html">Sociedad</a></li>
+                        <li><a href="deportes.html">Deportes</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="turismo.html">Turismo</a></li>
+                        <li><a href="economia.html">Economía</a></li>
+                        <li><a href="tecnologia.html">Tecnología</a></li>
+
+                    </ul>
+
+                </div>
+
+                
+
+
+
+                <!-- Información -->
+
+                <div class="col-6 col-md-4">
+
+                    <h3 class="footer-titulo">
+                        PUNTO PISCO
+                    </h3>
+
+                    <ul class="footer-enlaces">
 
                         <li>
-                            <a class="dropdown-item"
-                               href="quienes-somos.html">
+                            <a href="quienes-somos.html">
                                 Quiénes somos
                             </a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item"
-                               href="contacto.html">
+                            <a href="contacto.html">
                                 Contacto
                             </a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item"
-                               href="privacidad.html">
+                            <a href="privacidad.html">
                                 Política de privacidad
                             </a>
                         </li>
 
                     </ul>
-                </li>
 
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- FIN DEL MENÚ -->
-
-
-<!-- CONTENIDO PRINCIPAL -->
-<main class="contenido-categoria">
-
-    <!-- BANNER DE PISCO -->
-    <section class="banner-categoria">
-        <img
-            src="img/pisco/banner-pisco.png"
-            alt="Noticias de Pisco"
-            class="imagen-banner"
-        >
-    </section>
-
-    <!-- SECCIÓN DE NOTICIAS -->
-    <section class="seccion-noticias container">
-
-        <div class="titulo-noticias">
-            <h2>Últimas noticias</h2>
-            <p>Entérate de lo que sucede en nuestra provincia.</p>
-        </div>
-
-        <!-- LISTADO DE NOTICIAS -->
-        <div class="lista-noticias">
-
-            <!-- NOTICIA 1 -->
-            <article class="noticia-item">
-                <div class="noticia-imagen">
-                    <img src="img/pisco/noticia-pisco-1.jpg"
-                         alt="Noticia de Pisco">
                 </div>
 
-                <div class="noticia-contenido">
-                    <span class="noticia-categoria">SEGURIDAD CIUDADANA</span>
-                    <h3>Enfrentamiento policial en Pisco deja cuatro detenidos durante operativo por presunto secuestro</h3>
-                    <p class="noticia-fecha">10 de septiembre de 2026</p>
-                    <p class="noticia-resumen">
-                        Un operativo policial realizado en el sector Camino Viejo, en San Andrés, terminó con cuatro personas detenidas tras un enfrentamiento armado. La intervención, que habría frustrado un presunto plan de secuestro contra el hijo de un empresario, permitió incautar armas de fuego, explosivos y municiones. Posteriormente, el Poder Judicial dictó 18 meses de prisión preventiva contra los investigados.
-                    </p>
-                    <a href="noticias/pisco/noticia-pisco-1.html" class="noticia-enlace">Leer noticia
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
 
-            <!-- NOTICIA 2 -->
-            <article class="noticia-item">
-                <div class="noticia-imagen">
-                    <img src="img/noticia-pisco-2.jpg"
-                         alt="Noticia de Pisco">
-                </div>
-
-                <div class="noticia-contenido">
-                    <span class="noticia-categoria">COMUNIDAD</span>
-                    <h3>Título de nuestra segunda noticia</h3>
-                    <p class="noticia-fecha">01 de noviembre de 2026</p>
-                    <p class="noticia-resumen">
-                        Aquí irá otro resumen con información relevante
-                        sobre los acontecimientos de nuestra provincia.
-                    </p>
-                    <a href="noticias/pisco/noticia-pisco-2.html" class="noticia-enlace">Leer noticia
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
-
-            <!-- NOTICIA 3 -->
-            <article class="noticia-item">
-                <div class="noticia-imagen">
-                    <img src="img/noticia-pisco-3.jpg"
-                         alt="Noticia de Pisco">
-                </div>
-
-                <div class="noticia-contenido">
-                    <span class="noticia-categoria">REGIONAL</span>
-                    <h3>Título de nuestra tercera noticia</h3>
-                    <p class="noticia-fecha">31 de octubre de 2026</p>
-                    <p class="noticia-resumen">
-                        Este espacio estará destinado a presentar
-                        los detalles principales de cada publicación.
-                    </p>
-                    <a href="noticias/pisco/noticia-pisco-3.html" class="noticia-enlace">Leer noticia
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
+            </div>
 
 
-            <!-- NOTICIA 4 -->
-            <article class="noticia-item">
-                <div class="noticia-imagen">
-                    <img src="img/noticia-pisco-3.jpg"
-                         alt="Noticia de Pisco">
-                </div>
 
-                <div class="noticia-contenido">
-                    <span class="noticia-categoria">REGIONAL</span>
-                    <h3>Título de nuestra tercera noticia</h3>
-                    <p class="noticia-fecha">31 de octubre de 2026</p>
-                    <p class="noticia-resumen">
-                        Este espacio estará destinado a presentar
-                        los detalles principales de cada publicación.
-                    </p>
-                    <a href="noticias/pisco/noticia-pisco-4.html" class="noticia-enlace">Leer noticia
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
+            <!-- Derechos de autor -->
 
-        </div>
+            <div class="footer-inferior">
 
-    </section>
-
-</main>
-<!-- FIN DEL CONTENIDO PRINCIPAL -->
-
-
-<!-- PIE DE PAGINA -->
-<footer class="pie-pagina">
-
-    <div class="container">
-
-        <div class="row g-4">
-
-            <!-- Identidad del periódico -->
-            <div class="col-12 col-md-5">
-                <h2 class="footer-logo">PUNTO PISCO</h2>
-
-                <p class="footer-descripcion">
-                    La información de nuestra tierra,
-                    en un solo lugar.
+                <p>
+                    © 2026 Punto Pisco.
+                    Todos los derechos reservados.
                 </p>
 
-                <!-- Redes sociales -->
-                <div class="footer-redes">
-                    <a href="https://www.facebook.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
+                <p class="footer-creador">
+                    Un proyecto creado por Jesús Mejía.
+                </p>
 
-                    <a href="https://www.instagram.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-
-                    <a href="https://www.tiktok.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="TikTok">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                </div>
             </div>
 
-            <!-- Secciones -->
-            <div class="col-6 col-md-3">
-                <h3 class="footer-titulo">SECCIONES</h3>
-
-                <ul class="footer-enlaces">
-                    <li><a href="pisco.html">Pisco</a></li>
-                    <li><a href="ica.html">Ica</a></li>
-                    <li><a href="peru.html">Perú</a></li>
-                    <li><a href="deportes.html">Deportes</a></li>
-                    <li><a href="tecnologia.html">Tecnología</a></li>
-                    <li><a href="cultura.html">Cultura</a></li>
-                </ul>
-            </div>
-
-            <!-- Información -->
-            <div class="col-6 col-md-4">
-                <h3 class="footer-titulo">PUNTO PISCO</h3>
-
-                <ul class="footer-enlaces">
-                    <li>
-                        <a href="quienes-somos.html">
-                            Quiénes somos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="privacidad.html">
-                            Política de privacidad
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
         </div>
 
-        
-        <!-- Derechos de autor -->
-        <div class="footer-inferior">
-            <p>
-                © 2026 Punto Pisco.
-                Todos los derechos reservados.
-            </p>
-
-            <p class="footer-creador">
-                Un proyecto creado por Jesús Mejía.
-            </p>
-        </div>
-
-
-    </div>
-
-</footer>
-<!-- FIN DEL PIE DE PAGINA -->
-
+    </footer>
 
 
     <!-- JavaScript de Bootstrap -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
