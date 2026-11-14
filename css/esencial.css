@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 :root {
     --color-morado: #24113f;
     --color-morado-medio: #6b35a5;
@@ -35,10 +36,10 @@ body {
 
 .cabecera-punto h1 {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 58px;
-    font-weight: 800;
-    letter-spacing: -1px;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .logo-enlace {
@@ -51,8 +52,8 @@ body {
 }
 
 .logo-enlace img {
-    width: 75px;
-    height: 75px;
+    width: 130px;
+    height: 100px;
     object-fit: contain;
 }
 
